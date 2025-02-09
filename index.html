@@ -18,6 +18,17 @@
       href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css"
       rel="stylesheet"
     />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Start Header -->
@@ -26,47 +37,46 @@
     >
       <nav class="container mx-auto py-5 flex justify-between items-center">
         <ul
-        id="navbar"
+          id="navbar"
           class="fixed top-0 -left-full md:!left-0 bg-white w-full h-screen md:h-0 md:bg-transparent px-10 md:px-0 py-5 md:py-0 md:relative flex flex-col md:flex-row items-center gap-5 duration-300"
         >
           <i
             class="fa-solid fa-x cursor-pointer text-slate-700 absolute right-5 block md:!hidden"
-           onclick="hideNavbar()"></i>
+            onclick="hideNavbar()"
+          ></i>
           <li lang="en" class="text-emerald-500 font-bold">
-            <a href="">Home</a>
+            <a href="index.html" data-key="homeLink">Home</a>
           </li>
-          <!-- <li lang="ar" class="text-emerald-500 font-bold"><a href="">الرئيسية</a></li> -->
           <li
             lang="en"
             class="text-slate-700 duration-300 hover:text-emerald-500 font-bold"
           >
-            <a href="">About</a>
+            <a href="html/about.html" data-key="aboutLink">About</a>
           </li>
-          <!-- <li lang="ar" class="text-white duration-300 hover:text-emerald-500 font-bold><a href="">من نحن</a></li> -->
           <li
             lang="en"
             class="text-slate-700 duration-300 hover:text-emerald-500 font-bold"
           >
-            <a href="">Services</a>
+            <a href="html/services.html" data-key="servicesLink">Services</a>
           </li>
-          <!-- <li lang="ar" class="text-white duration-300 hover:text-emerald-500 font-bold><a href="">خدماتنا</a></li> -->
           <li
             lang="en"
             class="text-slate-700 duration-300 hover:text-emerald-500 font-bold"
           >
-            <a href="">Feature</a>
+            <a href="html/featuer.html" data-key="featureLink">Feature</a>
           </li>
-          <!-- <li lang="ar" class="text-white duration-300 hover:text-emerald-500 font-bold><a href="">مزايا</a></li> -->
           <li
             lang="en"
             class="text-slate-700 duration-300 hover:text-emerald-500 font-bold"
           >
-            <a href="">Contact</a>
+            <a href="html/contact.html" data-key="contactLink">Contact</a>
           </li>
-          <!-- <li lang="ar" class="text-white duration-300 hover:text-emerald-500 font-bold><a href="">تواصل معنا</a></li> -->
         </ul>
-        <div class="w-full flex gap-3 items-center mx-2">
-            <i class="fa-solid fa-bars text-slate-700  block md:!hidden cursor-pointer" onclick="showNavbar()"></i>
+        <div class="w-full flex-end flex gap-3 items-center mx-2">
+          <i
+            class="fa-solid fa-bars text-slate-700 block md:!hidden cursor-pointer"
+            onclick="showNavbar()"
+          ></i>
           <div class="logo w-[100px] md:w-[250px]">
             <img
               src="images/logo.png"
@@ -82,32 +92,38 @@
               <a
                 href=""
                 class="w-[20px] md:w-[30px] h-[20px] md:h-[30px] rounded-md text-white bg-blue-500 flex justify-center items-center duration-300 hover:bg-white hover:text-blue-500"
-                ><i class="fa-brands fa-facebook-f text-[10px] md:text-[15px]"></i
+                ><i
+                  class="fa-brands fa-facebook-f text-[10px] md:text-[15px]"
+                ></i
               ></a>
             </li>
             <li>
               <a
                 href=""
                 class="w-[20px] md:w-[30px] h-[20px] md:h-[30px] rounded-md text-white bg-slate-700 flex justify-center items-center duration-300 hover:bg-white hover:text-slate-800"
-                ><i class="fa-brands fa-x-twitter text-[10px] md:text-[15px]"></i
+                ><i
+                  class="fa-brands fa-x-twitter text-[10px] md:text-[15px]"
+                ></i
               ></a>
             </li>
             <li>
               <a
                 href=""
                 class="w-[20px] md:w-[30px] h-[20px] md:h-[30px] rounded-md text-white bg-violet-600 flex justify-center items-center duration-300 hover:bg-white hover:text-violet-600"
-                ><i class="fa-brands fa-instagram text-[10px] md:text-[15px]"></i
+                ><i
+                  class="fa-brands fa-instagram text-[10px] md:text-[15px]"
+                ></i
               ></a>
             </li>
           </ul>
-          <select
-            name="lang"
-            id="lang"
-            class="border border-slate-400 p-1 bg-white rounded-md outline-none cursor-pointer text-[10px] md:text-[16px]"
-          >
-            <option value="en" onclick="changeLanguage('en')">English</option>
-            <option value="ar" onclick="changeLanguage('ar')">العربية</option>
-          </select>
+          <div class="flex items-center gap-2">
+            <button class="cursor-pointer" onclick="changeLanguage('en')">
+              EN
+            </button>
+            <button class="cursor-pointer" onclick="changeLanguage('ar')">
+              AR
+            </button>
+          </div>
         </div>
       </nav>
     </header>
@@ -118,36 +134,39 @@
     >
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <head>
-          <h1 lang="en" class="text-2xl md:text-5xl font-bold text-white pb-5 w-full">
+          <h1
+            lang="en"
+            data-key="head"
+            class="text-2xl md:text-5xl font-bold text-white pb-5 w-full"
+          >
             Fastest Way to Achieve Success
           </h1>
-          <!-- <h1 lang="ar" class="text-xl md:text-5xl font-bold text-white pb-5">أسرع طريقة لتحقيق النجاح</h1> -->
         </head>
-        <p lang="en" class="text-white text-[13px] md:text-[16px]">
+        <p
+          lang="en"
+          data-key="description"
+          class="text-white text-[13px] md:text-[16px]"
+        >
           At Bareeq, we provide you with economic consultations that lead you
           towards success, with innovative plans and strategic visions that
           ensure you excel and grow in the business world
         </p>
-        <!-- <p lang="ar" class="text-white text-[13px] md:text-[16px]">
-          نقدم لك في بريق الاستشارات الاقتصادية التي تقودك نحو النجاح ، بخطط
-          مبتكرة ورؤى استراتيجية تأكد من التفوق والنمو في عالم الأعمال.
-        </p> -->
         <div class="flex justify-center items-center gap-8 pt-5">
           <a
             lang="en"
             href=""
             class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[12px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
-            ><i class="fa-solid fa-link"></i><span>Services</span></a
+            ><i class="fa-solid fa-link"></i
+            ><span data-key="servicesLink">Services</span></a
           >
-          <!-- <a lang="ar" href="" class="relative py-2 md:py-3 px-3 md:px-6 text-white text-[12px] md:text-[16px] border-1 border-white font-bold z-[20] duration-500 hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"><i class="fa-solid fa-link ms-3"></i>خدماتنا</a> -->
           <a
             href="#video"
             lang="en"
             class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[12px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 cursor-pointer hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
           >
-            <i class="fa-solid fa-play"></i><span>Watch video</span>
+            <i class="fa-solid fa-play"></i
+            ><span data-key="watchBtn">Watch video</span>
           </a>
-          <!-- <button lang="ar" class="relative py-1 md:py-3 px-3 md:px-6 text-white text-[12px] md:text-[16px] border-1 border-white font-bold z-[20] duration-500 cursor-pointer hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"><i class="fa-solid fa-play ms-3"></i>شاهد الفيديو</button> -->
         </div>
       </div>
     </section>
@@ -168,8 +187,9 @@
               loading="lazy"
             />
           </div>
-          <p lang="en" class="font-bold text-lg">Qualified Team</p>
-          <!-- <p lang="ar" class="font-bold text-lg">فريق مؤهل</p> -->
+          <p lang="en" data-key="boxOneTitle" class="font-bold text-lg">
+            Qualified Team
+          </p>
         </div>
         <div
           class="box flex flex-col items-center gap-5 text-center text-slate-700 p-5 rounded-md shadow-lg flex-1 duration-300 hover:bg-emerald-300/50 hover:-translate-y-[5%]"
@@ -182,8 +202,9 @@
               loading="lazy"
             />
           </div>
-          <p lang="en" class="font-bold text-lg">Individual Approach</p>
-          <!-- <p lang="ar" class="font-bold text-lg">نهج فردي</p> -->
+          <p lang="en" data-key="boxTwoTitle" class="font-bold text-lg">
+            Individual Approach
+          </p>
         </div>
         <div
           class="box flex flex-col items-center gap-5 text-center text-slate-700 p-5 rounded-md shadow-lg flex-1 duration-300 hover:bg-emerald-300/50 hover:-translate-y-[5%]"
@@ -196,8 +217,9 @@
               loading="lazy"
             />
           </div>
-          <p lang="en" class="font-bold text-lg">100% Success</p>
-          <!-- <p lang="ar" class="font-bold text-lg">100% نجاح</p> -->
+          <p lang="en" data-key="boxThreeTitle" class="font-bold text-lg">
+            100% Success
+          </p>
         </div>
         <div
           class="box flex flex-col items-center gap-5 text-center text-slate-700 p-5 rounded-md shadow-lg flex-1 duration-300 hover:bg-emerald-300/50 hover:-translate-y-[5%]"
@@ -210,8 +232,9 @@
               loading="lazy"
             />
           </div>
-          <p lang="en" class="font-bold text-lg">100% Satisfaction</p>
-          <!-- <p lang="ar" class="font-bold text-lg">100%</p> -->
+          <p lang="en" data-key="boxFourTitle" class="font-bold text-lg">
+            100% Satisfaction
+          </p>
         </div>
       </div>
     </section>
@@ -245,16 +268,25 @@
         </div>
         <div class="flex-1">
           <head>
-            <h1 lang="en" class="text-slate-700 text-md md:text-3xl pb-8 font-bold">
-              <span class="text-xl md:text-5xl text-emerald-700">Bareq Al Shati</span>
+            <h1
+              lang="en"
+              data-key="aboutHead"
+              class="text-slate-700 text-md md:text-3xl pb-8 font-bold"
+            >
+              <span
+                lang="en"
+                data-key="bareq"
+                class="text-xl md:text-5xl text-emerald-700"
+                >Bareq Al Shati</span
+              >
               established in 2003 We provide solutions grow business
             </h1>
-            <!-- <h1 lang="ar" class="text-slate-700 text-md md:text-3xl pb-8">
-              <span class="text-xl md:text-5xl text-emerald-700">بريق الشاطيء</span>المنشاه في عام
-              2003 نقدم حلولا لتنمية الأعمال
-            </h1> -->
           </head>
-          <p lang="en" class="text-slate-500 mb-12 text-[12px] md:text-[16px]">
+          <p
+            lang="en"
+            data-key="aboutDescription"
+            class="text-slate-500 mb-12 text-[12px] md:text-[16px]"
+          >
             Bareq Al Shati is a full-fledged Business Consulting Company in
             Saudi Arabia, offering SAGIA Business Services, Registration
             Services, Pre-qualification Services, Management Consultation,
@@ -269,26 +301,13 @@
             for companies, moreover design and create professional profiles and
             websites for companies.
           </p>
-          <!-- <p lang="ar" class="text-slate-500 mb-12 text-[12px] md:text-[16px]">
-            بريق الشاطئ هي شركة استشارات أعمال متكاملة في المملكة العربية
-            السعودية ، تقدم خدمات SAGIA للأعمال والتسجيل الخدمات ، خدمات التأهيل
-            المسبق ، الاستشارات الإدارية ، تصميم ملف تعريف الشركة ، تصميم
-            المواقع. تقدم مجموعة واسعة من خدمات استشارات الأعمال الشاملة وذات
-            القيمة المضافة و الحلول ، نحتت بريق الشاطئ اسماً فريداً لنفسها كاسم
-            واحد من شركة استشارات الأعمال الرائدة والأكثر ثقة في المملكة العربية
-            السعودية العربيه. هدفنا من تقديم خدمات احترافية للصغار / المتوسطين
-            الشركات ومساعدتها من خلال تقديم الخدمات الإدارية بما في ذلك خدمات
-            التسجيل والتأهيل المسبق لكل منهما من الخبرة. نقدم الاستشارات المالية
-            والدراسات الاقتصادية للشركات ، علاوة على ذلك ، تصميم وإنشاء ملفات
-            تعريف احترافية و مواقع للشركات.
-          </p> -->
           <a
             lang="en"
+            data-key="more"
             href="html/about.html"
             class="py-2 md:py-3 px-4 md:px-6 text-[12px] md:text-[16px] text-slate-700 border-1 border-slate-700 font-bold duration-500 hover:text-white hover:bg-emerald-500 hover:border-emerald-500"
             >Learn more</a
           >
-          <!-- <a lang="ar" href="html/about.html" class=" py-2 md:py-3 px-4 md:px-6 text-[12px] md:text-[16px] text-slate-700 border-1 border-slate-700 font-bold duration-500 hover:text-white hover:bg-emerald-500 hover:border-emerald-500">اكتشف المزيد</a> -->
         </div>
       </div>
     </section>
@@ -300,25 +319,20 @@
       >
         <section class="flex-1">
           <head class="pb-5">
-            <h1 lang="en" class="text-xl md:text-3xl text-emerald-700 font-bold mb-5">
+            <h1
+              lang="en"
+              data-key="featureHead"
+              class="text-xl md:text-3xl text-emerald-700 font-bold mb-5"
+            >
               Our Main Features
             </h1>
-            <!-- <h1 lang="ar" class="text-xl md:text-3xl text-emerald-700 font-bold mb-5">
-              ميزاتنا الرئيسية
-            </h1> -->
-            <p lang="en" class="text-slate-500">
+            <p lang="en" data-key="featureDescription" class="text-slate-500">
               We understand that each work is unique. We therefore offer you
               customized consulting solutions based on a careful analysis of
               your needs and goals. From growth strategies to improving internal
               performance, we create plans that deliver tangible results for
               you.
             </p>
-            <!-- <p lang="ar" class="text-slate-500">
-              نحن نفهم أن كل عمل فريد من نوعه. لذلك نقدم لك حلولاً استشارية
-              مخصصة بناءً على تحليل دقيق لاحتياجاتك وأهدافك. من استراتيجيات
-              النمو إلى تحسين الأداء الداخلي، نحن نضع خططاً تحقق لك نتائج
-              ملموسة.
-            </p> -->
           </head>
           <div class="grid grid-cols-1 md:grid-cols-2 pt-5 gap-5">
             <div
@@ -329,19 +343,20 @@
               ></i>
               <h1
                 lang="en"
+                data-key="featureOneHead"
                 class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
               >
                 Organization
               </h1>
-              <!-- <h1 lang="ar" class="text-slate-700 font-bold duration-500 group-hover:text-white">المنظمة</h1> -->
               <p
                 lang="en"
+                data-key="featureTwoDesc"
                 class="text-slate-500 duration-500 group-hover:text-white"
               >
-                Far far away, behind the word mountains, far from the countries
-                Vokalia
+                Organization of the work of the organization includes arranging
+                and distributing tasks and resources effectively to ensure the
+                achievement of objectives
               </p>
-              <!-- <p lang="ar" class="text-slate-500 duration-500 group-hover:text-white">Far far away, behind the word mountains, far from the countries Vokalia</p> -->
             </div>
             <div
               class="card relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
@@ -351,19 +366,20 @@
               ></i>
               <h1
                 lang="en"
+                data-key="featureTwoHead"
                 class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
               >
                 Marketing Strategy
               </h1>
-              <!-- <h1 lang="ar" class="text-slate-700 font-bold duration-500 group-hover:text-white">المنظمة</h1> -->
               <p
                 lang="en"
+                data-key="featureTwoDesc"
                 class="text-slate-500 duration-500 group-hover:text-white"
               >
-                Far far away, behind the word mountains, far from the countries
-                Vokalia
+                A comprehensive plan aimed at identifying how to reach target
+                customers and promote the brand to increase sales and achieve
+                the organization's goals
               </p>
-              <!-- <p lang="ar" class="text-slate-500 duration-500 group-hover:text-white">Far far away, behind the word mountains, far from the countries Vokalia</p> -->
             </div>
             <div
               class="card relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
@@ -373,19 +389,20 @@
               ></i>
               <h1
                 lang="en"
+                data-key="featureThreeHead"
                 class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
               >
                 Risk Analysis
               </h1>
-              <!-- <h1 lang="ar" class="text-slate-700 font-bold duration-500 group-hover:text-white">المنظمة</h1> -->
               <p
                 lang="en"
+                data-key="featureThreeDesc"
                 class="text-slate-500 duration-500 group-hover:text-white"
               >
-                Far far away, behind the word mountains, far from the countries
-                Vokalia
+                Identify and assess potential risks that may affect the
+                organization's or project's objectives, and then develop
+                strategies to deal with them
               </p>
-              <!-- <p lang="ar" class="text-slate-500 duration-500 group-hover:text-white">Far far away, behind the word mountains, far from the countries Vokalia</p> -->
             </div>
             <div
               class="card relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
@@ -395,19 +412,20 @@
               ></i>
               <h1
                 lang="en"
+                data-key="featureFourHead"
                 class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
               >
                 Capital Market
               </h1>
-              <!-- <h1 lang="ar" class="text-slate-700 font-bold duration-500 group-hover:text-white">المنظمة</h1> -->
               <p
                 lang="en"
+                data-key="featureFourDesc"
                 class="text-slate-500 duration-500 group-hover:text-white"
               >
-                Far far away, behind the word mountains, far from the countries
-                Vokalia
+                Providing financing to institutions and companies by allowing
+                them to issue shares and bonds to raise the funds they need to
+                implement their projects
               </p>
-              <!-- <p lang="ar" class="text-slate-500 duration-500 group-hover:text-white">Far far away, behind the word mountains, far from the countries Vokalia</p> -->
             </div>
           </div>
         </section>
@@ -419,19 +437,30 @@
           </picture>
           <div class="flex flex-col gap-3 pt-3">
             <head>
-              <h1 lang="en" class="text-slate-700 font-bold md:text-lg">
+              <h1
+                lang="en"
+                data-key="storyTitle"
+                class="text-slate-700 font-bold md:text-lg"
+              >
                 Read Our Success Story for Inspiration
               </h1>
               <!-- <h1 lang="ar" class="text-slate-700 font-bold md:text-lg"></h1> -->
             </head>
-            <p lang="en" class="text-slate-500 text-[12px] md:text-[16px]">
-              For far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. On her way she met a copy. The copy warned
-              the Little Blind Text, that where it came from it would have been
-              rewritten a thousand times and everything that was left from its
-              origin would be the word
+            <p
+              lang="en"
+              data-key="storyDesc"
+              class="text-slate-500 text-[12px] md:text-[16px]"
+            >
+              The beginning was to provide basic services such as registration
+              and pre-qualification services for companies, in addition to
+              management consulting. Thanks to its commitment to providing
+              outstanding services, Bariq Al Shati has been able to build a
+              strong reputation in the Saudi market and become one of the
+              leading consulting companies. Today, Bariq Al Shati is one of the
+              trusted business consulting firms in Saudi Arabia, and it
+              continues to provide high-quality services that contribute to
+              achieving the goals of its clients and enhancing their
+              competitiveness in the market.
             </p>
             <!-- <p lang="ar" class="text-slate-500 text-[12px] md:text-[16px]">
               
@@ -449,29 +478,47 @@
         <div
           class="grid grid-cols-1 md:grid-cols-3 text-center rounded-md overflow-hidden"
         >
-          <div class="flex flex-col gap-5 bg-white p-5 border-b border-slate-200 md:border-0">
+          <div
+            class="flex flex-col gap-5 bg-white p-5 border-b border-slate-200 md:border-0"
+          >
             <div
               class="w-[70px] h-[70px] mx-auto rounded-full flex justify-center items-center border-3 border-emerald-500 text-emerald-500"
             >
               <i class="fa-solid fa-clock-rotate-left text-lg"></i>
             </div>
             <head>
-              <h1 class="text-slate-700 text-5xl font-bold counter" id="counter1" data-target="14">0</h1>
+              <h1
+                class="text-slate-700 text-5xl font-bold counter"
+                id="counter1"
+                data-target="14"
+              >
+                0
+              </h1>
             </head>
-            <p lang="en" class="text-slate-500">Years Of Experience</p>
-            <!-- <p lang="ar" class="text-slate-500">سنة من الخبرة</p> -->
+            <p lang="en" data-key="statsOne" class="text-slate-500">
+              Years Of Experience
+            </p>
           </div>
-          <div class="flex flex-col gap-5 bg-white p-5 border-b border-slate-200 md:border-0">
+          <div
+            class="flex flex-col gap-5 bg-white p-5 border-b border-slate-200 md:border-0"
+          >
             <div
               class="w-[70px] h-[70px] mx-auto rounded-full flex justify-center items-center border-3 border-emerald-500 text-emerald-500"
             >
               <i class="fa-solid fa-face-smile-beam text-lg"></i>
             </div>
             <head>
-              <h1 class="text-slate-700 text-5xl font-bold counter" id="counter2" data-target="1200">0</h1>
+              <h1
+                class="text-slate-700 text-5xl font-bold counter"
+                id="counter2"
+                data-target="1200"
+              >
+                0
+              </h1>
             </head>
-            <p lang="en" class="text-slate-500">Happy Clients</p>
-            <!-- <p lang="ar" class="text-slate-500">عملاء راضون</p> -->
+            <p lang="en" data-key="statsTwo" class="text-slate-500">
+              Happy Clients
+            </p>
           </div>
           <div class="flex flex-col gap-5 bg-white p-5">
             <div
@@ -480,10 +527,18 @@
               <i class="fa-solid fa-briefcase text-lg"></i>
             </div>
             <div class="flex justify-center">
-              <h1 class="text-slate-700 text-5xl font-bold counter" id="counter3" data-target="140+">0</h1><span class="font-bold">+</span>
+              <h1
+                class="text-slate-700 text-5xl font-bold counter"
+                id="counter3"
+                data-target="140+"
+              >
+                0
+              </h1>
+              <span class="font-bold">+</span>
             </div>
-            <p lang="en" class="text-slate-500">Completed Projects</p>
-            <!-- <p lang="ar" class="text-slate-500">مشاريع منجزة</p> -->
+            <p lang="en" data-key="statsThree" class="text-slate-500">
+              Completed Projects
+            </p>
           </div>
         </div>
       </div>
@@ -491,7 +546,9 @@
     <!-- End Statistic -->
     <!-- Start Choose -->
     <section class="py-16 bg-slate-100 h-[80vh]" id="video">
-      <div class="container px-5 md:px-0 h-full mx-auto flex flex-col md:flex-row gap-10">
+      <div
+        class="container px-5 md:px-0 h-full mx-auto flex flex-col md:flex-row gap-10"
+      >
         <div
           class="flex-1 order-last md:order-first h-full mb-20 md:w-full rounded-md shadow-lg"
         >
@@ -504,13 +561,14 @@
         </div>
         <div class="flex-1">
           <head class="pb-5">
-            <h1 lang="en" class="text-lg md:text-3xl text-emerald-700 font-bold mb-5">
+            <h1
+              lang="en"
+              data-key="chooseHead"
+              class="text-lg md:text-3xl text-emerald-700 font-bold mb-5"
+            >
               Why Choose Bareq
             </h1>
-            <!-- <h1 lang="ar" class="text-xl md:text-3xl text-emerald-700 font-bold mb-5">
-              لماذا يجب اختيار بارق
-            </h1> -->
-            <p lang="en" class="text-slate-500 pb-5">
+            <p lang="en" data-key="chooseDesc" class="text-slate-500 pb-5">
               Bareq works to provide consulting based on a careful analysis of
               the internal and external environment of the client, which helps
               to provide long-term solutions that contribute to business growth
@@ -519,22 +577,14 @@
               individually, rather than providing general solutions that may not
               be effective in different environments.
             </p>
-            <!-- <p lang="ar" class="text-slate-500">
-              بريق تعمل على تقديم استشارات تستند إلى تحليل دقيق للبيئة الداخلية والخارجية للعميل، مما يساعد على تقديم حلول طويلة الأمد تساهم في نمو الأعمال وتحقيق النجاح المستدام , الشركة تقدم حلولًا متكاملة تتناسب مع تحديات ومتطلبات كل عميل على حدة، بدلاً من تقديم حلول عامة قد لا تكون فعّالة في بيئات مختلفة
-            </p> -->
           </head>
           <a
             lang="en"
-            href=""
+            data-key="contactLink"
+            href="html/contact.html"
             class="py-2 md:py-3 px-4 md:px-6 text-[12px] md:text-[16px] text-slate-700 border-1 border-slate-700 font-bold duration-500 hover:text-white hover:bg-emerald-500 hover:border-emerald-500"
-            >Contact us</a
+            >Contact</a
           >
-          <!-- <a
-            lang="ar"
-            href=""
-            class="py-2 md:py-3 px-4 md:px-6 text-[12px] md:text-[16px] text-slate-700 border-1 border-slate-700 font-bold duration-500 hover:text-white hover:bg-emerald-500 hover:border-emerald-500"
-            >اتصل بنا</a
-          > -->
         </div>
       </div>
     </section>
@@ -543,21 +593,23 @@
     <section class="py-16 bg-white">
       <div class="container mx-auto px-5 md:px-0 mt-10 md:mt-0">
         <head class="md:pb-5">
-          <h1 lang="en" class="text-lg md:text-3xl text-emerald-700 font-bold mb-5">
+          <h1
+            lang="en"
+            data-key="serviceHead"
+            class="text-lg md:text-3xl text-emerald-700 font-bold mb-5"
+          >
             Consulting Services
           </h1>
-          <!-- <h1 lang="ar" class="text-lg md:text-3xl text-emerald-700 font-bold mb-5">
-              خدمات استشارية
-            </h1> -->
-          <p lang="en" class="text-[12px] md:text-[16px] text-slate-500">
+          <p
+            lang="en"
+            data-key="serviceDesc"
+            class="text-[12px] md:text-[16px] text-slate-500"
+          >
             We not only provide immediate solutions, but also provide long-term
             analytics and advice that help you prepare for the future of your
             business. We help you identify future opportunities and potential
             challenges, ensuring you a lasting competitive advantage.
           </p>
-          <!-- <p lang="ar" class="text-[12px] md:text-[16px] text-slate-500">
-              نحن لا نقتصر على تقديم حلول فورية فحسب، بل نقدم أيضاً تحليلات واستشارات طويلة الأمد تساعدك في الاستعداد لمستقبل أعمالك. نحن نساعدك في تحديد الفرص المستقبلية والتحديات المحتملة، مما يضمن لك ميزة تنافسية دائمة.
-            </p> -->
         </head>
         <div class="grid grid-cols-1 md:grid-cols-3 pt-10">
           <div
@@ -568,19 +620,19 @@
             ></i>
             <h1
               lang="en"
+              data-key="servicesTitleOne"
               class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
             >
               Business Analysis
             </h1>
-            <!-- <h1 lang="ar" class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white">تحليل الاعمال</h1> -->
             <p
               lang="en"
+              data-key="servicesDescOne"
               class="text-[12px] md:text-[16px] text-slate-500 duration-500 group-hover:text-white"
             >
-              Far far away, behind the word mountains, far from the countries
-              Vokalia
+              Study and analyze processes and systems in the organization with
+              the aim of improving performance
             </p>
-            <!-- <p lang="ar" class="text-[12px] md:text-[16px] text-slate-500 duration-500 group-hover:text-white">Far far away, behind the word mountains, far from the countries Vokalia</p> -->
           </div>
           <div
             class="card relative p-5 text-center border-b md:border-r border-slate-200 duration-500 group hover:bg-emerald-400"
@@ -590,19 +642,19 @@
             ></i>
             <h1
               lang="en"
+              data-key="servicesTitleTwo"
               class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
             >
               Business Consulting
             </h1>
-            <!-- <h1 lang="ar" class="md:text-xl py-5 text-slate-700 font-bold duration-500 group-hover:text-white">استشارات الاعمال</h1> -->
             <p
               lang="en"
+              data-key="servicesDescTwo"
               class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
             >
-              Far far away, behind the word mountains, far from the countries
-              Vokalia
+              Provide innovative solutions to meet the challenges that the
+              company may face
             </p>
-            <!-- <p lang="ar" class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white">Far far away, behind the word mountains, far from the countries Vokalia</p> -->
           </div>
           <div
             class="card relative p-5 text-center duration-500 border-b border-slate-200 group hover:bg-emerald-400"
@@ -612,19 +664,19 @@
             ></i>
             <h1
               lang="en"
+              data-key="servicesTitleThree"
               class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
             >
               Business Insurance
             </h1>
-            <!-- <h1 lang="ar" class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white">تأمين الاعمال</h1> -->
             <p
               lang="en"
+              data-key="servicesDescThree"
               class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
             >
-              Far far away, behind the word mountains, far from the countries
-              Vokalia
+              Protect companies from financial risks related to day-to-day
+              business activities
             </p>
-            <!-- <p lang="ar" class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white">Far far away, behind the word mountains, far from the countries Vokalia</p> -->
           </div>
           <div
             class="card relative p-5 text-center duration-500 border-b md:border-b-0 md:border-r border-slate-200 group hover:bg-emerald-400"
@@ -634,19 +686,20 @@
             ></i>
             <h1
               lang="en"
+              data-key="servicesTitleFour"
               class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
             >
               Global Investigation
             </h1>
-            <!-- <h1 lang="ar" class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white">التحقيق العالمي</h1> -->
             <p
               lang="en"
+              data-key="servicesDescFour"
               class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
             >
-              Far far away, behind the word mountains, far from the countries
-              Vokalia
+              Collaborate with government organizations, private companies, and
+              international lawyers to ensure compliance with local and
+              international laws
             </p>
-            <!-- <p lang="ar" class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white">Far far away, behind the word mountains, far from the countries Vokalia</p> -->
           </div>
           <div
             class="card relative p-5 text-center duration-500 border-b md:border-b-0 md:border-r border-slate-200 group hover:bg-emerald-400"
@@ -656,19 +709,19 @@
             ></i>
             <h1
               lang="en"
+              data-key="servicesTitleFive"
               class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
             >
               Audit & Evaluation
             </h1>
-            <!-- <h1 lang="ar" class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white">التدقيق والتقييم</h1> -->
             <p
               lang="en"
+              data-key="servicesDescFive"
               class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
             >
-              Far far away, behind the word mountains, far from the countries
-              Vokalia
+              Review and analyze financial statements or operations within the
+              organization for accuracy
             </p>
-            <!-- <p lang="ar" class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white">Far far away, behind the word mountains, far from the countries Vokalia</p> -->
           </div>
           <div
             class="card relative p-5 text-center duration-500 group hover:bg-emerald-400"
@@ -678,19 +731,18 @@
             ></i>
             <h1
               lang="en"
+              data-key="servicesTitleSix"
               class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
             >
               Marketing Strategy
             </h1>
-            <!-- <h1 lang="ar" class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white">الاستراتيجية التسويقية</h1> -->
             <p
               lang="en"
+              data-key="servicesDescSix"
               class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
             >
-              Far far away, behind the word mountains, far from the countries
-              Vokalia
+              How to attract customers, build brand, and achieve business goals
             </p>
-            <!-- <p lang="ar" class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white">Far far away, behind the word mountains, far from the countries Vokalia</p> -->
           </div>
         </div>
       </div>
@@ -703,35 +755,37 @@
       >
         <div class="flex-1">
           <head class="pb-5">
-            <h1 lang="en" class="text-lg md:text-3xl text-emerald-700 font-bold mb-5">
+            <h1
+              lang="en"
+              data-key="faqHead"
+              class="text-lg md:text-3xl text-emerald-700 font-bold mb-5"
+            >
               Frequently Asked Questions
             </h1>
-            <!-- <h1 lang="ar" class="text-lg md:text-3xl text-emerald-700 font-bold mb-5">
-              الأسئلة الشائعة
-            </h1> -->
-            <p lang="en" class="text-[12px] md:text-[16px] text-slate-500">
+            <p
+              lang="en"
+              data-key="faqDesc"
+              class="text-[12px] md:text-[16px] text-slate-500"
+            >
               Frequently asked questions about our integrated consulting
               services and customized business solutions that support your
               company's success and help you achieve your strategic goals
               efficiently and effectively in the long term.
             </p>
-            <!-- <p lang="ar" class="text-[12px] md:text-[16px] text-slate-500">
-            الأسئلة الشائعة حول خدماتنا الاستشارية المتكاملة وحلول الأعمال المخصصة التي تدعم نجاح شركتك وتساعدك في تحقيق أهدافك الاستراتيجية بكفاءة وفعالية على المدى الطويل
-            </p> -->
           </head>
           <div class="flex flex-col gap-5 w-full pt-8">
             <div
               class="p-5 bg-white border border-emerald-200 rounded-md w-full"
             >
               <div class="flex justify-between items-center gap-10">
-                <h2 lang="en" class="font-semibold text-[12px] md:text-[15px]">
+                <h2
+                  lang="en"
+                  data-key="qusOne"
+                  class="font-semibold text-[12px] md:text-[15px]"
+                >
                   What services does your company provide in the field of
                   consulting?
                 </h2>
-                <!-- <h2 lang="ar" class="font-semibold text-[12px] md:text-[16px]">
-                  What services does your company provide in the field of
-                  consulting?
-                </h2> -->
                 <div id="close" onclick="faqShow()">
                   <i
                     class="fa-solid fa-plus text-emerald-800 cursor-pointer"
@@ -740,6 +794,7 @@
               </div>
               <p
                 lang="en"
+                data-key="answerOne"
                 class="text-slate-700 bg-emerald-100/30 p-5 mt-3 border-t border-t-slate-200 rounded-b-md hide answer duration-300"
               >
                 We offer a variety of consulting services, including growth
@@ -747,28 +802,19 @@
                 management, market analysis, technology consulting, and business
                 development.
               </p>
-              <!-- <p
-              lang="ar"
-                class="text-slate-700 pt-5 mt-3 border-t border-t-slate-200 hide answer duration-300"
-              >
-                We offer a variety of consulting services, including growth
-                strategies, operational efficiency improvement, change
-                management, market analysis, technology consulting, and business
-                development.
-              </p> -->
             </div>
             <div
               class="p-5 bg-white border border-emerald-200 rounded-md w-full"
             >
               <div class="flex justify-between items-center gap-10">
-                <h2 lang="en" class="font-semibold text-[12px] md:text-[15px]">
-                  Do you provide customized consultations based on the type and
-                  size of my company?
+                <h2
+                  lang="en"
+                  data-key="qusTwo"
+                  class="font-semibold text-[12px] md:text-[15px]"
+                >
+                  How can your company help me improve operational efficiency
+                  and increase productivity?
                 </h2>
-                <!-- <h2 lang="ar" class="font-semibold text-[12px] md:text-[15px]">
-                  Do you provide customized consultations based on the type and
-                  size of my company?
-                </h2> -->
                 <div id="close" onclick="faqShow()">
                   <i
                     class="fa-solid fa-plus text-emerald-800 cursor-pointer"
@@ -777,70 +823,26 @@
               </div>
               <p
                 lang="en"
-                class="text-slate-700 p-5 mt-3 border-t border-t-slate-200 hide answer duration-300 bg-emerald-100/30"
-              >
-                Yes, we offer customized consulting tailored to your company’s
-                unique needs, whether it’s a startup or a large enterprise, to
-                ensure that the solutions we provide align with your goals and
-                market conditions.
-              </p>
-              <!-- <p
-              lang="ar"
-                class="text-slate-700 pt-5 mt-3 border-t border-t-slate-200 hide answer duration-300"
-              >
-                Yes, we offer customized consulting tailored to your company’s
-                unique needs, whether it’s a startup or a large enterprise, to
-                ensure that the solutions we provide align with your goals and
-                market conditions.
-              </p> -->
-            </div>
-            <div
-              class="p-5 bg-white border border-emerald-200 rounded-md w-full"
-            >
-              <div class="flex justify-between items-center gap-10">
-                <h2 lang="en" class="font-semibold text-[12px] md:text-[15px]">
-                  How can your company help me improve operational efficiency
-                  and increase productivity?
-                </h2>
-                <!-- <h2 lang="ar" class="font-semibold text-[12px] md:text-[15px]">
-                  How can your company help me improve operational efficiency
-                  and increase productivity?
-                </h2> -->
-                <div id="close" onclick="faqShow()">
-                  <i
-                    class="fa-solid fa-plus text-emerald-800 cursor-pointer"
-                  ></i>
-                </div>
-              </div>
-              <p
-                lang="en"
+                data-key="answerTwo"
                 class="text-slate-700 p-5 mt-3 border-t border-t-slate-200 hide answer duration-300 bg-emerald-100/30"
               >
                 We analyze your company's current processes, then provide
                 innovative solutions to improve workflow, reduce costs, and
                 increase productivity using advanced tools and technologies.
               </p>
-              <!-- <p
-              lang="ar"
-                class="text-slate-700 p-5 mt-3 border-t border-t-slate-200 hide answer duration-300 bg-emerald-100/30"
-              >
-                We analyze your company's current processes, then provide
-                innovative solutions to improve workflow, reduce costs, and
-                increase productivity using advanced tools and technologies.
-              </p> -->
             </div>
             <div
               class="p-5 bg-white border border-emerald-200 rounded-md w-full"
             >
               <div class="flex justify-between items-center gap-10">
-                <h2 lang="en" class="font-semibold text-[12px] md:text-[15px]">
+                <h2
+                  lang="en"
+                  data-key="qusThree"
+                  class="font-semibold text-[12px] md:text-[15px]"
+                >
                   Do you provide ongoing support after the consultations are
                   completed?
                 </h2>
-                <!-- <h2 lang="ar" class="font-semibold text-[12px] md:text-[15px]">
-                  Do you provide ongoing support after the consultations are
-                  completed?
-                </h2> -->
                 <div id="close" onclick="faqShow()">
                   <i
                     class="fa-solid fa-plus text-emerald-800 cursor-pointer"
@@ -849,32 +851,25 @@
               </div>
               <p
                 lang="en"
+                data-key="answerThree"
                 class="text-slate-700 p-5 mt-3 border-t border-t-slate-200 hide answer duration-300 bg-emerald-100/30"
               >
                 Yes, we provide ongoing support to ensure strategies are
                 implemented effectively, monitor work outcomes, and adjust plans
                 when needed to achieve the best results.
               </p>
-              <!-- <p
-              lang="ar"
-                class="text-slate-700 p-5 mt-3 border-t border-t-slate-200 hide answer duration-300 bg-emerald-100/30"
-              >
-                Yes, we provide ongoing support to ensure strategies are
-                implemented effectively, monitor work outcomes, and adjust plans
-                when needed to achieve the best results.
-              </p> -->
             </div>
             <div
               class="p-5 bg-white border border-emerald-200 rounded-md w-full"
             >
               <div class="flex justify-between items-center gap-10">
-                <h2 lang="en" class="font-semibold text-[12px] md:text-[15px]">
+                <h2
+                  lang="en"
+                  data-key="qusFour"
+                  class="font-semibold text-[12px] md:text-[15px]"
+                >
                   Do you help companies expand into new markets?
                 </h2>
-                <!-- <h2 lang="ar" class="font-semibold text-[12px] md:text-[15px]">
-                  What services does your company provide in the field of
-                  consulting?
-                </h2> -->
                 <div id="close" onclick="faqShow()">
                   <i
                     class="fa-solid fa-plus text-emerald-800 cursor-pointer"
@@ -883,21 +878,43 @@
               </div>
               <p
                 lang="en"
+                data-key="answerFour"
                 class="text-slate-700 p-5 mt-3 border-t border-t-slate-200 hide answer duration-300 bg-emerald-100/30"
               >
                 Yes, we provide strategic consulting for entering new markets.
                 We study target markets, analyze competition, and develop
                 marketing plans that help you expand safely and effectively.
               </p>
-              <!-- <p
-              lang="ar"
+            </div>
+
+            <div
+              class="p-5 bg-white border border-emerald-200 rounded-md w-full"
+            >
+              <div class="flex justify-between items-center gap-10">
+                <h2
+                  lang="en"
+                  data-key="qusFive"
+                  class="font-semibold text-[12px] md:text-[15px]"
+                >
+                  Do you provide customized consultations based on the type and
+                  size of my company?
+                </h2>
+                <div id="close" onclick="faqShow()">
+                  <i
+                    class="fa-solid fa-plus text-emerald-800 cursor-pointer"
+                  ></i>
+                </div>
+              </div>
+              <p
+                lang="en"
+                data-key="answerFive"
                 class="text-slate-700 p-5 mt-3 border-t border-t-slate-200 hide answer duration-300 bg-emerald-100/30"
               >
-                We offer a variety of consulting services, including growth
-                strategies, operational efficiency improvement, change
-                management, market analysis, technology consulting, and business
-                development.
-              </p> -->
+                Yes, we offer customized consulting tailored to your company’s
+                unique needs, whether it’s a startup or a large enterprise, to
+                ensure that the solutions we provide align with your goals and
+                market conditions.
+              </p>
             </div>
           </div>
         </div>
@@ -908,20 +925,13 @@
                 <label
                   for="firstname"
                   lang="en"
+                  data-key="fName"
                   class="text-slate-700 font-semibold pb-2 block"
                 >
                   First Name
                 </label>
-                <!-- <label
-                  for="firstname"
-                  lang="ar"
-                  class="text-slate-700 font-semibold pb-2 block"
-                >
-                  الاسم الاول
-                </label> -->
                 <input
                   type="text"
-                  placeholder="Enter first name"
                   class="p-3 bg-slate-50 border border-emerald-200 bg-white outline-none rounded-md w-full"
                 />
               </div>
@@ -929,20 +939,13 @@
                 <label
                   for="lastname"
                   lang="en"
+                  data-key="lName"
                   class="text-slate-700 font-semibold pb-2 block"
                 >
                   Last Name
                 </label>
-                <!-- <label
-                  for="lastname"
-                  lang="ar"
-                  class="text-slate-700 font-semibold pb-2 block"
-                >
-                  الاسم الاخير
-                </label> -->
                 <input
                   type="text"
-                  placeholder="Enter last name"
                   class="p-3 bg-slate-50 border border-emerald-200 bg-white outline-none rounded-md w-full"
                 />
               </div>
@@ -952,20 +955,13 @@
                 <label
                   for="email"
                   lang="en"
+                  data-key="email"
                   class="text-slate-700 font-semibold pb-2 block"
                 >
                   Email
                 </label>
-                <!-- <label
-                  for="email"
-                  lang="ar"
-                  class="text-slate-700 font-semibold pb-2 block"
-                >
-                  البريد الالكتروني
-                </label> -->
                 <input
                   type="text"
-                  placeholder="Enter email"
                   class="p-3 bg-slate-50 border border-emerald-200 bg-white outline-none rounded-md w-full"
                 />
               </div>
@@ -973,20 +969,13 @@
                 <label
                   for="phone"
                   lang="en"
+                  data-key="phone"
                   class="text-slate-700 font-semibold pb-2 block"
                 >
                   Phone
                 </label>
-                <!-- <label
-                  for="email"
-                  lang="ar"
-                  class="text-slate-700 font-semibold pb-2 block"
-                >
-                  الهاتف
-                </label> -->
                 <input
                   type="text"
-                  placeholder="Enter phone"
                   class="p-3 bg-slate-50 border border-emerald-200 bg-white outline-none rounded-md w-full"
                 />
               </div>
@@ -995,60 +984,41 @@
               <label
                 for="subject"
                 lang="en"
+                data-key="servicesLink"
                 class="text-slate-700 font-semibold pb-2 block"
               >
                 Services
               </label>
-              <!-- <label
-                  for="email"
-                  lang="ar"
-                  class="text-slate-700 font-semibold pb-2 block"
-                >
-                  الخدمات
-                </label> -->
               <select
-                placeholder="Enter subject"
                 class="p-3 bg-slate-50 border border-emerald-200 bg-white text-[14px] text-slate-500 outline-none rounded-md w-full"
               >
-                <option value="">SAGIA Business Services</option>
-                <option value="">Registration Services</option>
-                <option value="">Pre-Qualification Services</option>
-                <option value="">Management Consultation</option>
-                <option value="">Company Profile Design</option>
-                <option value="">Web Design and Development</option>
+                <option lang="en" data-key="optionTwo" value="">Registration Services</option>
+                <option lang="en" data-key="optionThree" value="">Pre-Qualification Services</option>
+                <option lang="en" data-key="optionFour" value="">Management Consultation</option>
+                <option lang="en" data-key="optionFive" value="">Company Profile Design</option>
+                <option lang="en" data-key="optionSix" value="">Web Design and Development</option>
               </select>
             </div>
             <div class="flex-1">
               <label
                 for="message"
                 lang="en"
+                data-key="message"
                 class="text-slate-700 font-semibold pb-2 block"
               >
                 Message
               </label>
-              <!-- <label
-                  for="email"
-                  lang="ar"
-                  class="text-slate-700 font-semibold pb-2 block"
-                >
-                  رسالتك
-                </label> -->
               <textarea
-                placeholder="Enter your message here..."
                 class="resize-none p-3 h-[150px] bg-slate-50 border border-emerald-200 bg-white outline-none rounded-md w-full"
               ></textarea>
             </div>
             <button
               lang="en"
+              data-key="contactLink"
               class="py-3 px-6 text-slate-700 border-1 border-slate-700 font-bold duration-500 rounded-md cursor-pointer hover:text-white hover:bg-emerald-500 hover:border-emerald-500"
             >
-              Contact us
+              Contact
             </button>
-            <!-- <button
-            lang="ar"
-            class="py-3 px-6 text-slate-700 border-1 border-slate-700 font-bold duration-500 rounded-md cursor-pointer hover:text-white hover:bg-emerald-500 hover:border-emerald-500"
-            >ارسال</button
-          > -->
           </form>
         </div>
       </div>
@@ -1154,7 +1124,9 @@
           </ul>
         </div>
       </div>
-      <p class="py-3 px-5 md:px-0 text-center text-slate-600 bg-slate-100 border-t">
+      <p
+        class="py-3 px-5 md:px-0 text-center text-slate-600 bg-slate-100 border-t"
+      >
         Copyright &copy; 2025 Bareq Al Shati. All rights reserved.
       </p>
     </footer>
@@ -1182,6 +1154,7 @@
     <!-- End Video Modal -->
   </body>
   <script src="js/main.js"></script>
+  <script src="js/home-translation.js"></script>
   <!-- import video.js lib -->
   <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"></script>

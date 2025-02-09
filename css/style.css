@@ -6,6 +6,16 @@ body{
 html{
     scroll-behavior: smooth;
 }
+html[dir="rtl"] {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  text-align: right;
+}
+
+html[dir="ltr"] {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
 .boxs .box{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
