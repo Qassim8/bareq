@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.boxs .box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+/* تغيير حجم زر التشغيل */
+.vjs-theme-fantasy .vjs-big-play-button{
+    font-size: 50px !important;
+    color: white !important;
+    background-color: rgba(13, 11, 11, 0.503) !important;
+    border: 2px solid white !important;
+    border-radius: 50% !important;
+}
+.vjs-poster::before{
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background-color: rgba(13, 11, 11, 0.186) !important;
+}
