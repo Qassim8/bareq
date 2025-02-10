@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Bareq</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Video.js base CSS -->
+    <link
+      href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fantasy Theme -->
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header
+      class="absolute w-full z-[150] bg-white px-5 md:px-0 sticky top-0 shadow-lg"
+    >
+      <nav class="container mx-auto py-5 flex justify-between items-center">
+        <div class="w-full flex-end flex gap-3 items-center mx-2">
+          <i
+            class="fa-solid fa-bars text-slate-700 block md:!hidden cursor-pointer"
+            onclick="showNavbar()"
+          ></i>
+          <div class="logo w-[100px] md:w-[150px] lg:w-[230px]">
+            <img
+              src="../images/logo.png"
+              class="max-w-full"
+              alt="logo"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <ul
+          id="navbar"
+          class="fixed top-0 -left-full md:!left-0 bg-white w-full h-screen md:h-0 md:bg-transparent px-10 md:px-0 py-5 md:py-0 md:relative flex flex-col md:flex-row items-center gap-5 duration-300"
+        >
+          <i
+            class="fa-solid fa-x cursor-pointer text-slate-700 absolute right-5 block md:!hidden"
+            onclick="hideNavbar()"
+          ></i>
+          <li
+            lang="en"
+            class="text-slate-700 duration-300 hover:text-emerald-500 font-bold"
+          >
+            <a href="../index.html" data-key="homeLink">Home</a>
+          </li>
+          <li lang="en" class="text-emerald-500 font-bold">
+            <a href="about.html" data-key="aboutLink">About</a>
+          </li>
+          <li
+            lang="en"
+            class="text-slate-700 duration-300 hover:text-emerald-500 font-bold"
+          >
+            <a href="services.html" data-key="servicesLink">Services</a>
+          </li>
+          <li
+            lang="en"
+            class="text-slate-700 duration-300 hover:text-emerald-500 font-bold"
+          >
+            <a href="featuer.html" data-key="featureLink">Feature</a>
+          </li>
+          <li
+            lang="en"
+            class="text-slate-700 duration-300 hover:text-emerald-500 font-bold"
+          >
+            <a href="contact.html" data-key="contactLink">Contact</a>
+          </li>
+        </ul>
+        <div class="w-full flex justify-end items-center gap-2 md:gap-5">
+          <ul class="flex items-center gap-1">
+            <li>
+              <a
+                href=""
+                target="_blank"
+                class="w-[15px] md:w-[30px] h-[15px] md:h-[30px] rounded-sm md:rounded-md text-white bg-blue-500 flex justify-center items-center duration-300 hover:bg-white hover:text-blue-500"
+                ><i
+                  class="fa-brands fa-facebook-f text-[8px] md:text-[15px]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href=""
+                target="_blank"
+                class="w-[15px] md:w-[30px] h-[15px] md:h-[30px] rounded-sm md:rounded-md text-white bg-slate-700 flex justify-center items-center duration-300 hover:bg-white hover:text-slate-800"
+                ><i class="fa-brands fa-x-twitter text-[8px] md:text-[15px]"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href=""
+                target="_blank"
+                class="w-[15px] md:w-[30px] h-[15px] md:h-[30px] rounded-sm md:rounded-md text-white bg-violet-600 flex justify-center items-center duration-300 hover:bg-white hover:text-violet-600"
+                ><i class="fa-brands fa-instagram text-[8px] md:text-[15px]"></i
+              ></a>
+            </li>
+          </ul>
+          <div
+            class="w-[30px] md:w-[50px] flex items-center justify-center px-1 rounded-md duration-300 hover:bg-emerald-200"
+          >
+            <img
+              id="lang-btn"
+              src="../images/en.png"
+              alt="Change Language"
+              class="max-w-full cursor-pointer"
+              onclick="changeLanguage(document.documentElement.getAttribute('lang') === 'en' ? 'ar' : 'en')"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+    <!-- Start Main Hero -->
+    <section
+      class="relative text-center bg-[url('../images/back.jpg')] bg-cover h-[60vh] before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-emerald-900/70"
+    >
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <head>
+          <h1
+            lang="en"
+            data-key="about"
+            class="text-2xl md:text-5xl font-bold text-white pb-5 w-full"
+          >
+            About Us
+          </h1>
+        </head>
+      </div>
+    </section>
+    <!-- End Main Hero  -->
+    <!-- Start About -->
+    <section class="about py-16 px-5 md:px-0">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-10"
+      >
+        <div class="flex-1 relative">
+          <div
+            class="h-full mt-0 md:mr-[150px] md:mb-[150px] ml-0 border-[10px] border-white"
+          >
+            <img
+              src="../images/about-4.jpg"
+              alt="about"
+              class="relative w-full"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="absolute top-[100px] md:top-[150px] left-[150px] z-[50] border-[10px] md:border-[20px] border-white"
+          >
+            <img
+              src="../images/about-3.jpg"
+              alt="about"
+              class="relative w-full"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="flex-1">
+          <head>
+            <h1
+              lang="en"
+              data-key="aboutHead"
+              class="text-emerald-700 text-md md:text-3xl pb-8 font-bold"
+            >
+              Bareq Al Shati established in 2003 We provide solutions grow
+              business
+            </h1>
+          </head>
+          <p
+            lang="en"
+            data-key="aboutDescription"
+            class="text-slate-500 mb-12 text-[12px] md:text-[16px]"
+          >
+            Bareq Al Shati is a full-fledged Business Consulting Company in
+            Saudi Arabia, offering SAGIA Business Services, Registration
+            Services, Pre-qualification Services, Management Consultation,
+            Company Profile Design, Web Design. Offering a wide spectrum of
+            comprehensive and value-adding Business Consulting services and
+            solutions, Bareq Al Shati has carved a unique name for itself as one
+            of the leading and most-trusted Business Consulting Company in Saudi
+            Arabia. Our aim of providing professional services to small / meduim
+            companies and assist them by providing management services including
+            registration & pre-qualification services for their respective ares
+            of expertise. We offer financial consultation and economic studies
+            for companies, moreover design and create professional profiles and
+            websites for companies.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+     <!-- Start Services -->
+    <section class="py-16 bg-slate-100">
+      <div class="container mx-auto px-5 md:px-0 mt-10 md:mt-0">
+        <head class="md:pb-5">
+          <h1
+            lang="en"
+            data-key="value"
+            class="text-lg md:text-3xl text-emerald-700 font-bold mb-5"
+          >
+            Our Value
+          </h1>
+          <p
+            lang="en"
+            data-key="serviceDesc"
+            class="text-[12px] md:text-[16px] text-slate-500"
+          >
+            We not only provide immediate solutions, but also provide long-term
+            analytics and advice that help you prepare for the future of your
+            business. We help you identify future opportunities and potential
+            challenges, ensuring you a lasting competitive advantage.
+          </p>
+        </head>
+        <div class="grid grid-cols-1 md:grid-cols-3 pt-10">
+          <div
+            class="card relative p-5 text-center border-b ltr:md:border-r border-slate-200 duration-500 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass-chart fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleOne"
+              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
+            >
+              Business Analysis
+            </h1>
+            <p
+              lang="en"
+              data-key="servicesDescOne"
+              class="text-[12px] md:text-[16px] text-slate-500 duration-500 group-hover:text-white"
+            >
+              Study and analyze processes and systems in the organization with
+              the aim of improving performance
+            </p>
+          </div>
+          <div
+            class="card relative p-5 text-center border-b rtl:md:border-r ltr:md:border-r border-slate-200 duration-500 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-user-tie fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleTwo"
+              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
+            >
+              Business Consulting
+            </h1>
+            <p
+              lang="en"
+              data-key="servicesDescTwo"
+              class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
+            >
+              Provide innovative solutions to meet the challenges that the
+              company may face
+            </p>
+          </div>
+          <div
+            class="card relative p-5 text-center duration-500 rtl:md:border-r border-b border-slate-200 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-sack-dollar fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleThree"
+              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
+            >
+              Business Insurance
+            </h1>
+            <p
+              lang="en"
+              data-key="servicesDescThree"
+              class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
+            >
+              Protect companies from financial risks related to day-to-day
+              business activities
+            </p>
+          </div>
+          <div
+            class="card relative p-5 text-center duration-500 border-b md:border-b-0 ltr:md:border-r border-slate-200 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-earth-asia fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleFour"
+              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
+            >
+              Global Investigation
+            </h1>
+            <p
+              lang="en"
+              data-key="servicesDescFour"
+              class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
+            >
+              Collaborate with government organizations, private companies, and
+              international lawyers to ensure compliance with local and
+              international laws
+            </p>
+          </div>
+          <div
+            class="card relative p-5 text-center duration-500 border-b md:border-b-0 md:border-r border-slate-200 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-ranking-star fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleFive"
+              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
+            >
+              Audit & Evaluation
+            </h1>
+            <p
+              lang="en"
+              data-key="servicesDescFive"
+              class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
+            >
+              Review and analyze financial statements or operations within the
+              organization for accuracy
+            </p>
+          </div>
+          <div
+            class="card relative p-5 text-center rtl:md:border-r border-slate-200 duration-500 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-money-bill-trend-up fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleSix"
+              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
+            >
+              Marketing Strategy
+            </h1>
+            <p
+              lang="en"
+              data-key="servicesDescSix"
+              class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
+            >
+              How to attract customers, build brand, and achieve business goals
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+     <!-- Start Choose -->
+    <section class="py-16 h-[80vh]" id="video">
+      <div
+        class="container px-5 md:px-0 h-full mx-auto flex flex-col md:flex-row gap-10"
+      >
+        <div
+          class="flex-1 order-last md:order-first h-full mb-20 md:w-full rounded-md shadow-lg"
+        >
+          <video
+            class="video-js vjs-theme-fantasy md:min-w-full min-h-full"
+            controls
+            data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube",
+                 "src": "https://youtu.be/8-Ro8iW28Ck"}]}'
+          ></video>
+        </div>
+        <div class="flex-1">
+          <head class="pb-5">
+            <h1
+              lang="en"
+              data-key="chooseHead"
+              class="text-lg md:text-3xl text-emerald-700 font-bold mb-5"
+            >
+              Why Choose Bareq
+            </h1>
+            <p lang="en" data-key="chooseDesc" class="text-slate-500 pb-5">
+              Bareq works to provide consulting based on a careful analysis of
+              the internal and external environment of the client, which helps
+              to provide long-term solutions that contribute to business growth
+              and achieve sustainable success, the company provides integrated
+              solutions that suit the challenges and requirements of each client
+              individually, rather than providing general solutions that may not
+              be effective in different environments.
+            </p>
+          </head>
+          <a
+            lang="en"
+            data-key="contactLink"
+            href="html/contact.html"
+            class="py-2 md:py-3 px-4 md:px-6 text-[12px] md:text-[16px] text-slate-700 border-1 border-slate-700 font-bold duration-500 hover:text-white hover:bg-emerald-500 hover:border-emerald-500"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- End Choose -->
+    <!-- Start Footer -->
+    <footer class="bg-slate-200">
+      <div
+        class="container px-5 md:px-0 md:mx-auto flex flex-col md:flex-row gap-5 justify-between flex-wrap py-16"
+      >
+        <div class="flex flex-col gap-7">
+          <a href="../index.html" class="w-[250px]">
+            <img src="../images/logo.png" alt="logo" loading="lazy" />
+          </a>
+          <ul class="flex flex-col gap-2 text-slate-600">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-xl"></i>
+              <a href="mailto:info@bareqrt.com" target="_blank"
+                >info@bareqrt.com</a
+              >
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-xl"></i>
+              <div>
+                <a href="tel:+966500484444" target="_blank" class="block"
+                  >+966 50 048 4444</a
+                >
+                <a href="tel:+966555862222" target="_blank" class="block"
+                  >+966 55 586 2222</a
+                >
+              </div>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-location-pin text-xl"></i>
+              <span>Saudi Arabia</span>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h2
+            lang="en"
+            data-key="footerFirst"
+            class="font-bold text-lg border-dashed border-b-2 text-slate-700 mb-5"
+          >
+            Quick links
+          </h2>
+          <ul class="flex flex-col gap-2 text-slate-600">
+            <a href="about.html" class="group">
+              <i lang="en" class="fa-solid fa-square text-[12px] me-1"></i>
+              <span
+                lang="en"
+                data-key="aboutLink"
+                class="group-hover:ms-1 duration-300"
+                >About</span
+              >
+            </a>
+            <a href="services.html" class="group">
+              <i lang="en" class="fa-solid fa-square text-[12px] me-1"></i>
+              <span
+                lang="en"
+                data-key="servicesLink"
+                class="group-hover:ms-1 duration-300"
+                >Services</span
+              >
+            </a>
+            <a href="feature.html" class="group">
+              <i lang="en" class="fa-solid fa-square text-[12px] me-1"></i>
+              <span
+                lang="en"
+                data-key="featureLink"
+                class="group-hover:ms-1 duration-300"
+                >Featuers</span
+              >
+            </a>
+            <a href="contact.html" class="group">
+              <i lang="en" class="fa-solid fa-square text-[12px] me-1"></i>
+              <span
+                lang="en"
+                data-key="contactLink"
+                class="group-hover:ms-1 duration-300"
+                >Contact</span
+              >
+            </a>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h2
+            lang="en"
+            data-key="footerSecond"
+            class="font-bold text-lg border-dashed w-fit border-b-2 text-slate-700 mb-5"
+          >
+            Social Profiles
+          </h2>
+          <div class="flex items-center">
+            <input
+              type="text"
+              class="bg-white p-2 w-[250px] rounded-sm"
+              placeholder="Send message...!"
+            />
+            <div
+              class="-ms-[45px] h-[30px] w-[40px] text-white bg-emerald-700 flex justify-center items-center rounded-sm cursor-pointer"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+          </div>
+          <ul class="flex items-center gap-2">
+            <a
+              href=""
+              target="_blank"
+              class="w-[40px] h-[40px] text-blue-500 bg-slate-100 flex justify-center items-center border border-slate-300 rounded-md duration-300 hover:bg-blue-500 hover:text-white"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href=""
+              target="_blank"
+              class="w-[40px] h-[40px] text-slate-800 bg-slate-100 flex justify-center items-center border border-slate-300 rounded-md duration-300 hover:bg-slate-800 hover:text-white"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://wa.me/966500484444"
+              target="_blank"
+              class="w-[40px] h-[40px] text-emerald-500 bg-slate-100 flex justify-center items-center border border-slate-300 rounded-md duration-300 hover:bg-emerald-500 hover:text-white"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <p
+        lang="en"
+        data-key="copy"
+        class="py-5 px-5 md:px-0 bg-slate-600 text-center text-white"
+      >
+        Copyright © 2025 Bareq Al Shati. All rights reserved.
+      </p>
+    </footer>
+    <!-- End Footer -->
+  </body>
+  <script src="../js/main.js"></script>
+  <script src="../js/translation.js"></script>
+    <!-- import video.js lib -->
+  <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"></script>
+</html>

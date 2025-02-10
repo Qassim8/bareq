@@ -59,7 +59,7 @@ counters.forEach(counter => {
 
 // وظيفة بدء العد
 function startCounting(counterElement) {
-  const target = parseInt(counterElement.getAttribute('data-target')); // الحصول على الرقم الهدف
+  const target = parseInt(counterElement.getAttribute('data-key')); // الحصول على الرقم الهدف
   let current = 0;
   const increment = target / 100; // لتحديد السرعة (100 خطوة لتصل للعدد النهائي)
   
@@ -73,22 +73,3 @@ function startCounting(counterElement) {
   }, 20); // تحديث كل 20 مللي ثانية
 }
 
-function changeLanguage(language) {
-  // تحديد العناصر التي تحتوي على النصوص باللغتين
-  const englishText = document.querySelectorAll('[lang="en"]');
-  const arabicText = document.querySelectorAll('[lang="ar"]');
-
-  // إظهار العنصر المناسب استنادًا إلى اللغة المختارة
-  if (language === "en") {
-    englishText.style.display = "block"; // إظهار النص الإنجليزي
-    arabicText.style.display = "none"; // إخفاء النص العربي
-  } else if (language === "ar") {
-    englishText.style.display = "none"; // إخفاء النص الإنجليزي
-    arabicText.style.display = "block"; // إظهار النص العربي
-  }
-}
-
-// عند تحميل الصفحة، نحدد اللغة الافتراضية
-window.onload = function () {
-  changeLanguage("en"); // اللغة الافتراضية: الإنجليزية
-};
