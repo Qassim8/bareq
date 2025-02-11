@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Bareq</title>
+    <title>Contact With Bareq</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/all.min.css" />
@@ -16,16 +16,6 @@
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Video.js base CSS -->
-    <link
-      href="https://unpkg.com/video.js@7/dist/video-js.min.css"
-      rel="stylesheet"
-    />
-    <!-- Fantasy Theme -->
-    <link
-      href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css"
       rel="stylesheet"
     />
   </head>
@@ -63,7 +53,10 @@
           >
             <a href="../index.html" data-key="homeLink">Home</a>
           </li>
-          <li lang="en" class="text-emerald-500 font-bold">
+          <li
+            lang="en"
+            class="text-slate-700 duration-300 hover:text-emerald-500 font-bold"
+          >
             <a href="about.html" data-key="aboutLink">About</a>
           </li>
           <li
@@ -78,10 +71,7 @@
           >
             <a href="featuer.html" data-key="featureLink">Feature</a>
           </li>
-          <li
-            lang="en"
-            class="text-slate-700 duration-300 hover:text-emerald-500 font-bold"
-          >
+          <li lang="en" class="text-emerald-500 font-bold">
             <a href="contact.html" data-key="contactLink">Contact</a>
           </li>
         </ul>
@@ -137,208 +127,199 @@
         <head>
           <h1
             lang="en"
-            data-key="about"
+            data-key="contact"
             class="text-2xl md:text-5xl font-bold text-white pb-5 w-full"
           >
-            About Us
+            Contact Us
           </h1>
         </head>
       </div>
     </section>
     <!-- End Main Hero  -->
-    <!-- Start Vendors -->
-    <section class="py-8 md:py-16">
-      <div class="container mx-auto px-5 md:px-0">
-        <div
-          class="flex justify-between items-center flex-wrap"
+    <!-- Start Boxs -->
+    <section class="py-16 px-5 md:px-0 boxs">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
+        <a
+          href="mailto:info@bareqrt.com"
+          target="_blank"
+          class="box flex flex-col items-center gap-5 text-center text-slate-700 p-5 rounded-md shadow-lg flex-1 duration-300 hover:bg-emerald-300/50 hover:-translate-y-[5%]"
         >
-          <div class="flex-1 h-[50px]">
-            <img
-              src="../images/vendor-1.jpg"
-              alt="vendor"
-              class="max-w-full max-h-full"
-            />
+          <div
+            class="w-[100px] h-[100px] bg-emerald-500 text-white flex justify-center items-center rounded-full"
+          >
+            <i class="fa-solid fa-envelope fa-2x"></i>
           </div>
-          <div class="flex-1 h-[50px]">
-            <img
-              src="../images/vendor-2.png"
-              alt="vendor"
-              class="max-w-full max-h-full"
-            />
+          <p
+            lang="en"
+            data-key="contactOneTitle"
+            class="text-slate-600 font-bold md:text-lg"
+          >
+            info@bareqrt.com
+          </p>
+        </a>
+        <a
+          href="https://wa.me/966500484444"
+          target="_blank"
+          class="box flex flex-col items-center gap-5 text-center text-slate-700 p-5 rounded-md shadow-lg flex-1 duration-300 hover:bg-emerald-300/50 hover:-translate-y-[5%]"
+        >
+          <div
+            class="w-[100px] h-[100px] bg-emerald-500 text-white flex justify-center items-center rounded-full"
+          >
+            <i class="fa-brands fa-whatsapp fa-2x"></i>
           </div>
-          <div class="flex-1 h-[50px]">
-            <img
-              src="../images/vendor-3.jpg"
-              alt="vendor"
-              class="max-w-full max-h-full"
-            />
+          <p
+            lang="en"
+            data-key="contactTwoTitle"
+            class="text-slate-600 font-bold md:text-lg"
+          >
+            +966 50 048 4444
+          </p>
+        </a>
+        <a
+          href="https://maps.app.goo.gl/sZkHFjMrtc2CmdiW9"
+          target="_blank"
+          class="box flex flex-col items-center gap-5 text-center text-slate-700 p-5 rounded-md shadow-lg flex-1 duration-300 hover:bg-emerald-300/50 hover:-translate-y-[5%]"
+        >
+          <div
+            class="w-[100px] h-[100px] bg-emerald-500 text-white flex justify-center items-center rounded-full"
+          >
+            <i class="fa-solid fa-location-pin fa-2x"></i>
           </div>
-          <div class="flex-1 h-[50px]">
-            <img
-              src="../images/vendor-4.jpg"
-              alt="vendor"
-              class="max-w-full max-h-full"
-            />
-          </div>
-          <div class="flex-1 h-[50px]">
-            <img
-              src="../images/vendor-5.jpg"
-              alt="vendor"
-              class="max-w-full max-h-full"
-            />
-          </div>
-          <div class="flex-1 h-[50px]">
-            <img
-              src="../images/vendor-6.png"
-              alt="vendor"
-              class="max-w-full max-h-full"
-            />
-          </div>
-        </div>
+          <p
+            lang="en"
+            data-key="contactThreeTitle"
+            class="text-slate-600 font-bold md:text-lg"
+          >
+            KSA
+          </p>
+        </a>
       </div>
     </section>
-    <!-- End Vendors -->
-    <!-- Start About -->
-    <section class="about pt-16 md:pb-16 px-5 md:px-0 bg-slate-100">
+    <!-- End Boxs -->
+    <!-- Start Contact -->
+    <section class="contact md:h-screen py-16 bg-slate-100">
       <div
-        class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-10"
+        class="container h-full px-5 md:px-0 mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-20"
       >
-        <div class="flex-1 relative">
-          <div
-            class="h-full mt-0 md:mr-[150px] md:mb-[150px] ml-0 border-[10px] border-slate-100"
-          >
-            <img
-              src="../images/about-saudi-3.jpg"
-              alt="about"
-              class="relative w-full rounded-md"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="absolute top-[100px] md:top-[150px] left-[150px] z-[50] border-[10px] md:border-[20px] border-slate-100 rounded-md"
-          >
-            <img
-              src="../images/about-suadi-2.jpg"
-              alt="about"
-              class="relative w-full rounded-md"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <div class="flex-1">
-          <head>
-            <h1
-              lang="en"
-              data-key="aboutHead"
-              class="text-emerald-700 text-md md:text-5xl pb-5 font-bold"
-            >
-              Bareq Al Shati
-            </h1>
-          </head>
-          <p
-            lang="en"
-            data-key="aboutDescription"
-            class="text-slate-500 mb-12 text-[12px] md:text-[17px]"
-          >
-            It's a full-fledged Business Consulting Company in Saudi Arabia,
-            offering SAGIA Business Services, Registration Services,
-            Pre-qualification Services, Management Consultation, Company Profile
-            Design, Web Design. Offering a wide spectrum of comprehensive and
-            value-adding Business Consulting services and solutions, Bareq Al
-            Shati has carved a unique name for itself as one of the leading and
-            most-trusted Business Consulting Company in Saudi Arabia. Our aim of
-            providing professional services to small / meduim companies and
-            assist them by providing management services including registration
-            & pre-qualification services for their respective ares of expertise.
-            We offer financial consultation and economic studies for companies,
-            moreover design and create professional profiles and websites for
-            companies.
-          </p>
-        </div>
-      </div>
-      <div
-        class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-10 mt-10"
-      >
-        <div class="flex-1">
-          <p
-            lang="en"
-            data-key="aboutBareq"
-            class="text-slate-500 mb-12 text-[12px] md:text-[17px]"
-          >
-            The company specializes in providing commercial and economic
-            consulting since 2003. The company focuses on providing innovative
-            solutions that meet the needs of its customers through thoughtful
-            strategies based on accurate market and data analysis. The company
-            provides consulting in several areas such as business development,
-            project management, financial planning, and marketing strategies,
-            which helps companies improve their performance and increase their
-            growth. Bareeq Beach is committed to providing high-quality services
-            that keep pace with the latest economic trends and help its
-            customers make strategic decisions that support the achievement of
-            their long-term goals
-          </p>
-        </div>
-        <div class="flex-1 rounded-md order-first md:order-last overflow-hidden">
-          <img
-            src="../images/about-saudi.jpg"
-            alt="about"
-            class="max-w-full"
+        <div
+          class="flex-1 h-full order-last md:order-first border-2 border-emerald-400 rounded-md"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3563.934325389352!2d50.071285!3d26.714545!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDQyJzUyLjQiTiA1MMKwMDQnMDguOCJF!5e0!3m2!1sar!2sae!4v1739276712220!5m2!1sar!2sae"
+            class="w-full h-full"
+            style="border: 0"
+            allowfullscreen=""
             loading="lazy"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- End About -->
-    <!-- Start Choose -->
-    <section class="py-16 bg-slate-100 md:h-[80vh]" id="video">
-      <div
-        class="container px-5 md:px-0 h-full mx-auto flex flex-col md:flex-row gap-10 items-center"
-      >
-        <div
-          class="flex-1 h-full shadow-2xl"
-        >
-          <video
-            class="video-js vjs-theme-fantasy min-w-full min-h-full"
-            controls
-            data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube",
-                 "src": "https://youtu.be/8-Ro8iW28Ck"}]}'
-          ></video>
+          >
+          </iframe>
         </div>
         <div class="flex-1">
           <head>
             <h1
               lang="en"
-              data-key="chooseHead"
-              class="text-lg md:text-3xl text-emerald-700 font-bold mb-5"
+              data-key="contact"
+              class="text-lg md:text-3xl text-emerald-700 font-bold pb-5"
             >
-              Why Choose Bareq
+              Contact Us
             </h1>
             <p
               lang="en"
-              data-key="chooseDesc"
-              class="text-slate-500 pb-8 text-[12px] md:text-[17px]"
+              data-key="contactDesc"
+              class="text-[12px] md:text-[16px] text-slate-500 pb-10"
             >
-              Bareq works to provide consulting based on a careful analysis of
-              the internal and external environment of the client, which helps
-              to provide long-term solutions that contribute to business growth
-              and achieve sustainable success, the company provides integrated
-              solutions that suit the challenges and requirements of each client
-              individually, rather than providing general solutions that may not
-              be effective in different environments.
+              Our team is here to help you! If you have any questions or
+              concerns about our services, or if you need technical support,
+              please feel free to contact us. We appreciate every comment and
+              are keen to provide you with the best service Fill out the form
+              below and we will contact you as soon as possible
             </p>
           </head>
-          <a
-            lang="en"
-            data-key="contactLink"
-            href="contact.html"
-            class="py-2 md:py-3 px-4 md:px-6 text-[12px] md:text-[16px] text-slate-700 border-1 border-slate-700 font-bold duration-500 hover:text-white hover:bg-emerald-500 hover:border-emerald-500"
-            >Contact</a
-          >
+          <form class="flex flex-col gap-5">
+            <div class="flex flex-col md:flex-row justify-between gap-5">
+              <div class="flex-1">
+                <label
+                  for="firstname"
+                  lang="en"
+                  data-key="fName"
+                  class="text-slate-700 font-semibold pb-2 block"
+                >
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  class="p-3 bg-slate-50 border border-emerald-200 bg-white outline-none rounded-md w-full"
+                />
+              </div>
+              <div class="flex-1">
+                <label
+                  for="lastname"
+                  lang="en"
+                  data-key="lName"
+                  class="text-slate-700 font-semibold pb-2 block"
+                >
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  class="p-3 bg-slate-50 border border-emerald-200 bg-white outline-none rounded-md w-full"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between gap-5">
+              <div class="flex-1">
+                <label
+                  for="email"
+                  lang="en"
+                  data-key="email"
+                  class="text-slate-700 font-semibold pb-2 block"
+                >
+                  Email
+                </label>
+                <input
+                  type="text"
+                  class="p-3 bg-slate-50 border border-emerald-200 bg-white outline-none rounded-md w-full"
+                />
+              </div>
+              <div class="flex-1">
+                <label
+                  for="phone"
+                  lang="en"
+                  data-key="phone"
+                  class="text-slate-700 font-semibold pb-2 block"
+                >
+                  Phone
+                </label>
+                <input
+                  type="text"
+                  class="p-3 bg-slate-50 border border-emerald-200 bg-white outline-none rounded-md w-full"
+                />
+              </div>
+            </div>
+            <div class="flex-1">
+              <label
+                for="message"
+                lang="en"
+                data-key="message"
+                class="text-slate-700 font-semibold pb-2 block"
+              >
+                Message
+              </label>
+              <textarea
+                class="resize-none p-3 h-[150px] bg-slate-50 border border-emerald-200 bg-white outline-none rounded-md w-full"
+              ></textarea>
+            </div>
+            <button
+              lang="en"
+              data-key="contactLink"
+              class="py-3 px-6 text-slate-700 border-1 border-slate-700 font-bold duration-500 rounded-md cursor-pointer hover:text-white hover:bg-emerald-500 hover:border-emerald-500"
+            >
+              Contact
+            </button>
+          </form>
         </div>
       </div>
     </section>
-    <!-- End Choose -->
-    
+    <!-- End Contact -->
     <!-- Start Footer -->
     <footer class="bg-slate-200">
       <div
@@ -363,7 +344,12 @@
             </li>
             <li class="flex items-center gap-2">
               <i class="fa-solid fa-location-pin text-xl"></i>
-              <span>Saudi Arabia</span>
+              <a
+                href="https://maps.app.goo.gl/sZkHFjMrtc2CmdiW9"
+                target="_blank"
+                class="block"
+                >Saudi Arabia</a
+              >
             </li>
           </ul>
         </div>
@@ -471,7 +457,4 @@
   </body>
   <script src="../js/main.js"></script>
   <script src="../js/translation.js"></script>
-  <!-- import video.js lib -->
-  <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"></script>
 </html>

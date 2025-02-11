@@ -18,6 +18,11 @@
       href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css"
       rel="stylesheet"
     />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +32,11 @@
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- إضافة CSS للمكتبة -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
   </head>
@@ -103,9 +113,7 @@
                 href=""
                 target="_blank"
                 class="w-[15px] md:w-[30px] h-[15px] md:h-[30px] rounded-sm md:rounded-md text-white bg-slate-700 flex justify-center items-center duration-300 hover:bg-white hover:text-slate-800"
-                ><i
-                  class="fa-brands fa-x-twitter text-[8px] md:text-[15px]"
-                ></i
+                ><i class="fa-brands fa-x-twitter text-[8px] md:text-[15px]"></i
               ></a>
             </li>
             <li>
@@ -113,9 +121,7 @@
                 href=""
                 target="_blank"
                 class="w-[15px] md:w-[30px] h-[15px] md:h-[30px] rounded-sm md:rounded-md text-white bg-violet-600 flex justify-center items-center duration-300 hover:bg-white hover:text-violet-600"
-                ><i
-                  class="fa-brands fa-instagram text-[8px] md:text-[15px]"
-                ></i
+                ><i class="fa-brands fa-instagram text-[8px] md:text-[15px]"></i
               ></a>
             </li>
           </ul>
@@ -135,52 +141,205 @@
     </header>
     <!-- End Header -->
     <!-- Start Hero Section -->
-    <section
-      class="relative text-center bg-[url('images/Business-Consulting-Image.jpg')] bg-cover h-screen before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-slate-800/80"
-    >
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <head>
-          <h1
-            lang="en"
-            data-key="head"
-            class="text-2xl md:text-5xl font-bold text-white pb-5 w-full"
+    <div class="swiper mySwiper" dir="rtl">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide_1">
+          <section
+            class="relative text-center bg-[url('images/Business-Consulting-Image.jpg')] bg-cover h-screen before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-slate-800/80"
           >
-            Fastest Way to Achieve Success
-          </h1>
-        </head>
-        <p
-          lang="en"
-          data-key="description"
-          class="text-white text-[13px] md:text-[16px]"
-        >
-          At Bareeq, we provide you with economic consultations that lead you
-          towards success, with innovative plans and strategic visions that
-          ensure you excel and grow in the business world
-        </p>
-        <div class="flex justify-center items-center gap-8 pt-5">
-          <a
-            lang="en"
-            href=""
-            class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[10px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
-            ><i class="fa-solid fa-link"></i
-            ><span data-key="servicesLink">Services</span></a
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              <head>
+                <h1
+                  lang="en"
+                  data-key="head"
+                  class="text-2xl md:text-5xl font-bold text-white pb-5 w-full"
+                >
+                  Fastest Way to Achieve Success
+                </h1>
+              </head>
+              <p
+                lang="en"
+                data-key="description"
+                class="text-white text-[13px] md:text-[16px]"
+              >
+                At Bareeq, we provide you with economic consultations that lead
+                you towards success, with innovative plans and strategic visions
+                that ensure you excel and grow in the business world
+              </p>
+              <div class="flex justify-center items-center gap-8 pt-5">
+                <a
+                  lang="en"
+                  href=""
+                  class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[10px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
+                  ><i class="fa-solid fa-link"></i
+                  ><span data-key="servicesLink">Services</span></a
+                >
+                <a
+                  href="#video"
+                  lang="en"
+                  class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[10px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 cursor-pointer hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
+                >
+                  <i class="fa-solid fa-play"></i
+                  ><span data-key="watchBtn">Watch video</span>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide slide_2">
+          <section
+            class="relative text-center bg-[url('images/main-bg.jpeg')] bg-cover h-screen before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-slate-800/80"
           >
-          <a
-            href="#video"
-            lang="en"
-            class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[10px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 cursor-pointer hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <head>
+                <h1
+                  lang="en"
+                  data-key="headTwo"
+                  class="text-2xl md:text-5xl font-bold text-white pb-5 w-full"
+                >
+                  We Help to Grow Your Business
+                </h1>
+              </head>
+              <p
+                lang="en"
+                data-key="descriptionTwo"
+                class="text-white text-[13px] md:text-[16px]"
+              >
+                helping you grow your business. Whether you're a startup or an
+                established company, we provide the expertise, strategies, and
+                tools needed to elevate your brand, improve efficiency, and
+                drive long-term success
+              </p>
+              <div class="flex justify-center items-center gap-8 pt-5">
+                <a
+                  lang="en"
+                  href=""
+                  class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[10px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
+                  ><i class="fa-solid fa-link"></i
+                  ><span data-key="servicesLink">Services</span></a
+                >
+                <a
+                  href="#video"
+                  lang="en"
+                  class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[10px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 cursor-pointer hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
+                >
+                  <i class="fa-solid fa-play"></i
+                  ><span data-key="watchBtn">Watch video</span>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide slide_3">
+          <section
+            class="relative text-center bg-[url('images/stats.jpg')] bg-cover h-screen before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-slate-800/80"
           >
-            <i class="fa-solid fa-play"></i
-            ><span data-key="watchBtn">Watch video</span>
-          </a>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              <head>
+                <h1
+                  lang="en"
+                  data-key="headThree"
+                  class="text-2xl md:text-5xl font-bold text-white pb-5 w-full"
+                >
+                  We Are The Best Consulting Company
+                </h1>
+              </head>
+              <p
+                lang="en"
+                data-key="descriptionThree"
+                class="text-white text-[13px] md:text-[16px]"
+              >
+                we pride ourselves on being the best consulting company. Our
+                expertise, experience, and commitment to excellence allow us to
+                provide tailored solutions that drive success for our clients.
+              </p>
+              <div class="flex justify-center items-center gap-8 pt-5">
+                <a
+                  lang="en"
+                  href=""
+                  class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[10px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
+                  ><i class="fa-solid fa-link"></i
+                  ><span data-key="servicesLink">Services</span></a
+                >
+                <a
+                  href="#video"
+                  lang="en"
+                  class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[10px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 cursor-pointer hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
+                >
+                  <i class="fa-solid fa-play"></i
+                  ><span data-key="watchBtn">Watch video</span>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide slide_4">
+          <section
+            class="relative text-center bg-[url('images/bg.jpg')] bg-cover h-screen before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-slate-800/80"
+          >
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              <head>
+                <h1
+                  lang="en"
+                  data-key="headFour"
+                  class="text-2xl md:text-5xl font-bold text-white pb-5 w-full"
+                >
+                  Your Success Our Achievement
+                </h1>
+              </head>
+              <p
+                lang="en"
+                data-key="descriptionFour"
+                class="text-white text-[13px] md:text-[16px]"
+              >
+                Every step we take with you is a step towards achieving your
+                goals. We work hard to ensure you get the support and guidance
+                you need to excel in your field.
+              </p>
+              <div class="flex justify-center items-center gap-8 pt-5">
+                <a
+                  lang="en"
+                  href=""
+                  class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[10px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
+                  ><i class="fa-solid fa-link"></i
+                  ><span data-key="servicesLink">Services</span></a
+                >
+                <a
+                  href="#video"
+                  lang="en"
+                  class="relative flex justify-center items-center gap-2 py-2 md:py-3 px-3 md:px-6 text-white text-[10px] md:text-[16px] w-[120px] md:w-[200px] border-1 border-white font-bold z-[20] duration-500 cursor-pointer hover:border-emerald-500 after:absolute after:h-full after:w-0 after:left-0 after:top-0 after:bg-emerald-500 after:duration-500 after:-z-[10] hover:after:w-full"
+                >
+                  <i class="fa-solid fa-play"></i
+                  ><span data-key="watchBtn">Watch video</span>
+                </a>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
     <!-- End Hero Section -->
     <!-- Start Boxs -->
     <section class="py-16 px-5 md:px-0 boxs">
       <div
         class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+        data-aos="fade-down"
       >
         <div
           class="box flex flex-col items-center gap-5 text-center text-slate-700 p-5 rounded-md shadow-lg flex-1 duration-300 hover:bg-emerald-300/50 hover:-translate-y-[5%]"
@@ -250,12 +409,12 @@
       <div
         class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-10"
       >
-        <div class="flex-1 relative">
+        <div class="flex-1 relative" data-aos="fade-right">
           <div
             class="h-full mt-0 md:mr-[150px] md:mb-[150px] ml-0 border-[10px] border-slate-100"
           >
             <img
-              src="images/about-4.jpg"
+              src="images/about-saudi-3.jpg"
               alt="about"
               class="relative w-full"
               loading="lazy"
@@ -265,22 +424,21 @@
             class="absolute top-[100px] md:top-[150px] left-[150px] z-[50] border-[10px] md:border-[20px] border-slate-100"
           >
             <img
-              src="images/about-3.jpg"
+              src="images/about-suadi-2.jpg"
               alt="about"
               class="relative w-full"
               loading="lazy"
             />
           </div>
         </div>
-        <div class="flex-1">
+        <div class="flex-1" data-aos="fade-left">
           <head>
             <h1
               lang="en"
               data-key="aboutHead"
               class="text-emerald-700 text-md md:text-3xl pb-8 font-bold"
             >
-              Bareq Al Shati established in 2003 We provide solutions grow
-              business
+              Bareq Al Shati
             </h1>
           </head>
           <p
@@ -288,19 +446,19 @@
             data-key="aboutDescription"
             class="text-slate-500 mb-12 text-[12px] md:text-[16px]"
           >
-            Bareq Al Shati is a full-fledged Business Consulting Company in
-            Saudi Arabia, offering SAGIA Business Services, Registration
-            Services, Pre-qualification Services, Management Consultation,
-            Company Profile Design, Web Design. Offering a wide spectrum of
-            comprehensive and value-adding Business Consulting services and
-            solutions, Bareq Al Shati has carved a unique name for itself as one
-            of the leading and most-trusted Business Consulting Company in Saudi
-            Arabia. Our aim of providing professional services to small / meduim
-            companies and assist them by providing management services including
-            registration & pre-qualification services for their respective ares
-            of expertise. We offer financial consultation and economic studies
-            for companies, moreover design and create professional profiles and
-            websites for companies.
+            It's a full-fledged Business Consulting Company in Saudi Arabia,
+            offering SAGIA Business Services, Registration Services,
+            Pre-qualification Services, Management Consultation, Company Profile
+            Design, Web Design. Offering a wide spectrum of comprehensive and
+            value-adding Business Consulting services and solutions, Bareq Al
+            Shati has carved a unique name for itself as one of the leading and
+            most-trusted Business Consulting Company in Saudi Arabia. Our aim of
+            providing professional services to small / meduim companies and
+            assist them by providing management services including registration
+            & pre-qualification services for their respective ares of expertise.
+            We offer financial consultation and economic studies for companies,
+            moreover design and create professional profiles and websites for
+            companies.
           </p>
           <a
             lang="en"
@@ -313,171 +471,176 @@
       </div>
     </section>
     <!-- End About -->
-    <!-- Start Features -->
-    <section class="featuer py-16 px-5 md:px-0 bg-white">
-      <div
-        class="container mx-auto flex flex-col md:flex-row items-center gap-10"
-      >
-        <section class="flex-1">
-          <head class="pb-5">
-            <h1
-              lang="en"
-              data-key="featureHead"
-              class="text-xl md:text-3xl text-emerald-700 font-bold mb-5"
-            >
-              Our Main Features
-            </h1>
-            <p lang="en" data-key="featureDescription" class="text-slate-500">
-              We understand that each work is unique. We therefore offer you
-              customized consulting solutions based on a careful analysis of
-              your needs and goals. From growth strategies to improving internal
-              performance, we create plans that deliver tangible results for
-              you.
-            </p>
-          </head>
-          <div class="grid grid-cols-1 md:grid-cols-2 pt-5 gap-5">
-            <div
-              class="card relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
-            >
-              <i
-                class="fa-solid fa-sitemap fa-2x text-emerald-600 duration-500 group-hover:text-white"
-              ></i>
-              <h1
-                lang="en"
-                data-key="featureOneHead"
-                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
-              >
-                Organization
-              </h1>
-              <p
-                lang="en"
-                data-key="featureTwoDesc"
-                class="text-slate-500 duration-500 group-hover:text-white"
-              >
-                Organization of the work of the organization includes arranging
-                and distributing tasks and resources effectively to ensure the
-                achievement of objectives
-              </p>
-            </div>
-            <div
-              class="card relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
-            >
-              <i
-                class="fa-solid fa-money-bill-trend-up fa-2x text-emerald-600 duration-500 group-hover:text-white"
-              ></i>
-              <h1
-                lang="en"
-                data-key="featureTwoHead"
-                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
-              >
-                Marketing Strategy
-              </h1>
-              <p
-                lang="en"
-                data-key="featureTwoDesc"
-                class="text-slate-500 duration-500 group-hover:text-white"
-              >
-                A comprehensive plan aimed at identifying how to reach target
-                customers and promote the brand to increase sales and achieve
-                the organization's goals
-              </p>
-            </div>
-            <div
-              class="card relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
-            >
-              <i
-                class="fa-solid fa-magnifying-glass-chart fa-2x text-emerald-600 duration-500 group-hover:text-white"
-              ></i>
-              <h1
-                lang="en"
-                data-key="featureThreeHead"
-                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
-              >
-                Risk Analysis
-              </h1>
-              <p
-                lang="en"
-                data-key="featureThreeDesc"
-                class="text-slate-500 duration-500 group-hover:text-white"
-              >
-                Identify and assess potential risks that may affect the
-                organization's or project's objectives, and then develop
-                strategies to deal with them
-              </p>
-            </div>
-            <div
-              class="card relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
-            >
-              <i
-                class="fa-solid fa-handshake fa-2x text-emerald-600 duration-500 group-hover:text-white"
-              ></i>
-              <h1
-                lang="en"
-                data-key="featureFourHead"
-                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
-              >
-                Capital Market
-              </h1>
-              <p
-                lang="en"
-                data-key="featureFourDesc"
-                class="text-slate-500 duration-500 group-hover:text-white"
-              >
-                Providing financing to institutions and companies by allowing
-                them to issue shares and bonds to raise the funds they need to
-                implement their projects
-              </p>
-            </div>
+    <!-- Start Vendors -->
+    <section class="py-8 md:py-16">
+      <div class="container mx-auto px-5 md:px-0">
+        <div class="flex justify-between items-center flex-wrap" >
+          <div class="flex-1 h-[50px]">
+            <img
+              src="images/vendor-1.jpg"
+              alt="vendor"
+              class="max-w-full max-h-full"
+            />
           </div>
-        </section>
-        <section
-          class="flex-1 p-5 border-5 border-emerald-500/20 rounded-md duration-500 hover:bg-emerald-200"
-        >
-          <picture class="w-full rounded-md overflow-hidden">
-            <img src="images/feature.jpeg" alt="featuer" class="max-w-full" />
-          </picture>
-          <div class="flex flex-col gap-3 pt-3">
-            <head>
-              <h1
-                lang="en"
-                data-key="storyTitle"
-                class="text-slate-700 font-bold md:text-lg"
-              >
-                Read Our Success Story for Inspiration
-              </h1>
-              <!-- <h1 lang="ar" class="text-slate-700 font-bold md:text-lg"></h1> -->
-            </head>
-            <p
-              lang="en"
-              data-key="storyDesc"
-              class="text-slate-500 text-[12px] md:text-[16px]"
-            >
-              The beginning was to provide basic services such as registration
-              and pre-qualification services for companies, in addition to
-              management consulting. Thanks to its commitment to providing
-              outstanding services, Bariq Al Shati has been able to build a
-              strong reputation in the Saudi market and become one of the
-              leading consulting companies. Today, Bariq Al Shati is one of the
-              trusted business consulting firms in Saudi Arabia, and it
-              continues to provide high-quality services that contribute to
-              achieving the goals of its clients and enhancing their
-              competitiveness in the market.
-            </p>
-            <!-- <p lang="ar" class="text-slate-500 text-[12px] md:text-[16px]">
-              
-            </p> -->
+          <div class="flex-1 h-[50px]">
+            <img
+              src="images/vendor-2.png"
+              alt="vendor"
+              class="max-w-full max-h-full"
+            />
           </div>
-        </section>
+          <div class="flex-1 h-[50px]">
+            <img
+              src="images/vendor-3.jpg"
+              alt="vendor"
+              class="max-w-full max-h-full"
+            />
+          </div>
+          <div class="flex-1 h-[50px]">
+            <img
+              src="images/vendor-4.jpg"
+              alt="vendor"
+              class="max-w-full max-h-full"
+            />
+          </div>
+          <div class="flex-1 h-[50px]">
+            <img
+              src="images/vendor-5.jpg"
+              alt="vendor"
+              class="max-w-full max-h-full"
+            />
+          </div>
+          <div class="flex-1 h-[50px]">
+            <img
+              src="images/vendor-6.png"
+              alt="vendor"
+              class="max-w-full max-h-full"
+            />
+          </div>
+        </div>
       </div>
     </section>
-    <!-- End Features -->
+    <!-- End Vendors -->
+    <!-- Start Services -->
+    <section class="py-16 bg-slate-100">
+      <div class="container mx-auto px-5 md:px-0 mt-10 md:mt-0">
+        <head>
+          <h1
+            lang="en"
+            data-key="serviceHead"
+            class="text-lg md:text-3xl text-emerald-700 font-bold mb-5"
+          >
+            Our Best Services
+          </h1>
+          <p
+            lang="en"
+            data-key="serviceDesc"
+            class="text-[12px] md:text-[16px] text-slate-500"
+          >
+            We not only provide immediate solutions, but also provide long-term
+            analytics and advice that help you prepare for the future of your
+            business. We help you identify future opportunities and potential
+            challenges, ensuring you a lasting competitive advantage.
+          </p>
+        </head>
+        <div class="grid grid-cols-1 md:grid-cols-3 pt-10"  data-aos="fade-up">
+          <div
+            class="card relative p-5 text-center border-b ltr:md:border-r border-slate-200 duration-500 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-pen-fancy fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleOne"
+              class="text-slate-700 font-semibold py-5 duration-500 group-hover:text-white"
+            >
+              Registration with the Ministry of Investment
+            </h1>
+          </div>
+          <div
+            class="card relative p-5 text-center border-b rtl:md:border-r ltr:md:border-r border-slate-200 duration-500 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-user-tie fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleTwo"
+              class="text-slate-700 font-semibold py-5 duration-500 group-hover:text-white"
+            >
+              Business Services
+            </h1>
+          </div>
+          <div
+            class="card relative p-5 text-center duration-500 rtl:md:border-r border-b border-slate-200 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-briefcase fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleThree"
+              class="text-slate-700 font-semibold py-5 duration-500 group-hover:text-white"
+            >
+              Management and technical consulting
+            </h1>
+          </div>
+          <div
+            class="card relative p-5 text-center duration-500 border-b md:border-b-0 ltr:md:border-r border-slate-200 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-earth-asia fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleFour"
+              class="text-slate-700 font-semibold py-5 duration-500 group-hover:text-white"
+            >
+              Coordination of international and local investments
+            </h1>
+          </div>
+          <div
+            class="card relative p-5 text-center duration-500 border-b md:border-b-0 md:border-r border-slate-200 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-scale-unbalanced fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleFive"
+              class="text-slate-700 font-semibold py-5 duration-500 group-hover:text-white"
+            >
+              Providing legal services to local and foreign companies
+            </h1>
+          </div>
+          <div
+            class="card relative p-5 text-center rtl:md:border-r border-slate-200 duration-500 group hover:bg-emerald-400"
+          >
+            <i
+              class="fa-solid fa-sack-dollar fa-2x text-emerald-600 duration-500 group-hover:text-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleSix"
+              class="text-slate-700 font-semibold py-5 duration-500 group-hover:text-white"
+            >
+              Providing all commercial services
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
     <!-- Start Statistic -->
     <section
-      class="stats py-16 px-5 md:px-0 relative h-screen md:h-[50vh] bg-[url('images/stats.jpg')] bg-fixed z-30 before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-emerald-800/50 before:-z-[30]"
+      class="stats py-16 px-5 md:px-0 relative md:h-[50vh] bg-[url('images/stats.jpg')] bg-fixed z-30 before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-emerald-800/50 before:-z-[30]"
     >
-      <div class="container mx-auto z-[30] h-full">
+      <div class="container mx-auto z-[30]">
         <div
           class="grid grid-cols-1 md:grid-cols-3 text-center rounded-md overflow-hidden"
+           data-aos="fade-down"
+            data-aos-duration="1000"
         >
           <div
             class="flex flex-col gap-5 bg-white p-5 border-b border-slate-200 md:border-0"
@@ -545,22 +708,174 @@
       </div>
     </section>
     <!-- End Statistic -->
-    <!-- Start Choose -->
-    <section class="py-16 bg-slate-100 h-[80vh]" id="video">
+    <!-- Start Features -->
+    <section class="featuer py-16 px-5 md:px-0">
       <div
-        class="container px-5 md:px-0 h-full mx-auto flex flex-col md:flex-row gap-10"
+        class="container mx-auto flex flex-col md:flex-row items-center gap-10" 
+      >
+        <section class="flex-1"
+        data-aos="fade-rightt">
+          <head class="pb-5">
+            <h1
+              lang="en"
+              data-key="featureHead"
+              class="text-xl md:text-3xl text-emerald-700 font-bold mb-5"
+            >
+              Our Main Features
+            </h1>
+            <p lang="en" data-key="featureDescription" class="text-slate-500">
+              We understand that each work is unique. We therefore offer you
+              customized consulting solutions based on a careful analysis of
+              your needs and goals. From growth strategies to improving internal
+              performance, we create plans that deliver tangible results for
+              you.
+            </p>
+          </head>
+          <div class="grid grid-cols-1 md:grid-cols-2 pt-5 gap-5">
+            <div
+              class="card bg-white shadow-md rounded-md relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
+            >
+              <i
+                class="fa-solid fa-sitemap fa-2x text-emerald-600 duration-500 group-hover:text-white"
+              ></i>
+              <h1
+                lang="en"
+                data-key="featureOneHead"
+                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
+              >
+                Organization
+              </h1>
+              <p
+                lang="en"
+                data-key="featureOneDesc"
+                class="text-slate-500 duration-500 group-hover:text-white"
+              >
+                Structuring activities, resources and people to achieve goals
+                efficiently
+              </p>
+            </div>
+            <div
+              class="card bg-white shadow-md rounded-md relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
+            >
+              <i
+                class="fa-solid fa-money-bill-trend-up fa-2x text-emerald-600 duration-500 group-hover:text-white"
+              ></i>
+              <h1
+                lang="en"
+                data-key="featureTwoHead"
+                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
+              >
+                Marketing Strategy
+              </h1>
+              <p
+                lang="en"
+                data-key="featureTwoDesc"
+                class="text-slate-500 duration-500 group-hover:text-white"
+              >
+                Identify unique product values, and choose the right channels to
+                reach the audience
+              </p>
+            </div>
+            <div
+              class="card bg-white shadow-md rounded-md relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
+            >
+              <i
+                class="fa-solid fa-magnifying-glass-chart fa-2x text-emerald-600 duration-500 group-hover:text-white"
+              ></i>
+              <h1
+                lang="en"
+                data-key="featureThreeHead"
+                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
+              >
+                Risk Analysis
+              </h1>
+              <p
+                lang="en"
+                data-key="featureThreeDesc"
+                class="text-slate-500 duration-500 group-hover:text-white"
+              >
+                Identify and assess potential risks that may affect the business
+              </p>
+            </div>
+            <div
+              class="card bg-white shadow-md rounded-md relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
+            >
+              <i
+                class="fa-solid fa-handshake fa-2x text-emerald-600 duration-500 group-hover:text-white"
+              ></i>
+              <h1
+                lang="en"
+                data-key="featureFourHead"
+                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
+              >
+                Capital Market
+              </h1>
+              <p
+                lang="en"
+                data-key="featureFourDesc"
+                class="text-slate-500 duration-500 group-hover:text-white"
+              >
+                Provide opportunities for investors to achieve returns on their
+                investments
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="flex-1 p-5 border-5 border-emerald-500/20 rounded-md duration-500 hover:bg-emerald-200"
+          data-aos="fade-left"
+        >
+          <picture class="w-full rounded-md overflow-hidden">
+            <img src="images/feature.jpeg" alt="featuer" class="max-w-full" />
+          </picture>
+          <div class="flex flex-col gap-3 pt-3">
+            <head>
+              <h1
+                lang="en"
+                data-key="storyTitle"
+                class="text-slate-700 font-bold md:text-lg"
+              >
+                Read Our Success Story for Inspiration
+              </h1>
+            </head>
+            <p
+              lang="en"
+              data-key="storyDesc"
+              class="text-slate-500 text-[12px] md:text-[16px]"
+            >
+              The beginning was to provide basic services such as registration
+              and pre-qualification services for companies, in addition to
+              management consulting. Thanks to its commitment to providing
+              outstanding services, Bariq Al Shati has been able to build a
+              strong reputation in the Saudi market and become one of the
+              leading consulting companies. Today, Bariq Al Shati is one of the
+              trusted business consulting firms in Saudi Arabia, and it
+              continues to provide high-quality services that contribute to
+              achieving the goals of its clients and enhancing their
+              competitiveness in the market.
+            </p>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- End Features -->
+    <!-- Start Choose -->
+    <section class="py-16 bg-slate-100" id="video">
+      <div
+        class="container px-5 md:h-[80vh] md:px-0 h-full mx-auto flex flex-col md:flex-row gap-10"
       >
         <div
-          class="flex-1 order-last md:order-first h-full mb-20 md:w-full rounded-md shadow-lg"
+          class="flex-1 h-full shadow-2xl"
+          data-aos="fade-up"
         >
           <video
-            class="video-js vjs-theme-fantasy md:min-w-full min-h-full"
+            class="video-js vjs-theme-fantasy min-w-full min-h-full"
             controls
             data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube",
                  "src": "https://youtu.be/8-Ro8iW28Ck"}]}'
           ></video>
         </div>
-        <div class="flex-1">
+        <div class="flex-1" data-aos="fade-down">
           <head class="pb-5">
             <h1
               lang="en"
@@ -590,172 +905,201 @@
       </div>
     </section>
     <!-- End Choose -->
-    <!-- Start Services -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-5 md:px-0 mt-10 md:mt-0">
-        <head class="md:pb-5">
+    <!-- Start Testimonials -->
+    <section class="py-16">
+      <div class="container mx-auto px-5 md:px-0">
+        <head>
           <h1
             lang="en"
-            data-key="serviceHead"
-            class="text-lg md:text-3xl text-emerald-700 font-bold mb-5"
+            data-key="testiHead"
+            class="text-lg md:text-3xl text-emerald-700 font-bold mt-10 md:mt-0 mb-5"
           >
-            Consulting Services
+            Our Clients Says
           </h1>
-          <p
-            lang="en"
-            data-key="serviceDesc"
-            class="text-[12px] md:text-[16px] text-slate-500"
-          >
-            We not only provide immediate solutions, but also provide long-term
-            analytics and advice that help you prepare for the future of your
-            business. We help you identify future opportunities and potential
-            challenges, ensuring you a lasting competitive advantage.
+          <p lang="en" data-key="testiDesc" class="text-slate-500 pb-10">
+            We believe that customer satisfaction is the foundation of our
+            success. Therefore, we always strive to provide the best products
+            and services that meet your expectations. Here are some of the
+            opinions of our valued customers who have chosen and enjoyed our
+            experience. We thank them for their trust, and we look forward to
+            continuing to provide all that is new and valuable
           </p>
         </head>
-        <div class="grid grid-cols-1 md:grid-cols-3 pt-10">
-          <div
-            class="card relative p-5 text-center border-b ltr:md:border-r border-slate-200 duration-500 group hover:bg-emerald-400"
-          >
-            <i
-              class="fa-solid fa-magnifying-glass-chart fa-2x text-emerald-600 duration-500 group-hover:text-white"
-            ></i>
-            <h1
-              lang="en"
-              data-key="servicesTitleOne"
-              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
-            >
-              Business Analysis
-            </h1>
-            <p
-              lang="en"
-              data-key="servicesDescOne"
-              class="text-[12px] md:text-[16px] text-slate-500 duration-500 group-hover:text-white"
-            >
-              Study and analyze processes and systems in the organization with
-              the aim of improving performance
-            </p>
+        <div class="swiper testiSwiper !py-10" dir="rtl">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="bg-white shadow-lg p-5 md:p-10">
+                <p
+                  lang="en"
+                  data-key="clientOne"
+                  class="text-slate-600 text-[12px] md:text-[16px]"
+                >
+                  We greatly appreciate to Bareq Alshati. Their advice was very
+                  valuable, as they provided us with a comprehensive plan that
+                  contributed to achieving our goals on time and within the
+                  specified budget.
+                </p>
+              </div>
+              <div
+                class="flex justify-between items-center bg-slate-50 px-5 md:px-10 py-3"
+              >
+                <div class="flex items-center gap-2">
+                  <div
+                    class="w-[35px] md:w-[50px] h-[35px] md:h-[50px] rounded-sm overflow-hidden"
+                  >
+                    <img
+                      src="images/businessman.png"
+                      alt="avatar"
+                      class="h-full w-full"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p
+                    lang="en"
+                    data-key="clientOneName"
+                    class="font-semibold text-[10px] md:text-[16px]"
+                  >
+                    Saoud Mahnna
+                  </p>
+                </div>
+                <h2 lang="en" data-key="clientOneDesc">CEO</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-white p-5 md:p-10">
+                <p
+                  lang="en"
+                  data-key="clientTwo"
+                  class="text-slate-600 text-[12px] md:text-[16px]"
+                >
+                  We have benefited greatly from the services of Bareq Al Shati
+                  in improving our business strategies. Financial consulting was
+                  accurate and effective, and helped us channel our resources
+                  perfectly to achieve our goals.
+                </p>
+              </div>
+              <div
+                class="flex justify-between items-center bg-slate-50 px-5 md:px-10 py-3"
+              >
+                <div class="flex items-center gap-2">
+                  <div
+                    class="w-[35px] md:w-[50px] h-[35px] md:h-[50px] rounded-sm overflow-hidden"
+                  >
+                    <img
+                      src="images/businessman.png"
+                      alt="avatar"
+                      class="h-full w-full"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p
+                    lang="en"
+                    data-key="clientTwoName"
+                    class="font-semibold text-[10px] md:text-[16px]"
+                  >
+                    Aziz Dosery
+                  </p>
+                </div>
+                <h2 lang="en" data-key="clientTwoDesc">PM</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-white p-2 md:p-10">
+                <p
+                  lang="en"
+                  data-key="clientThree"
+                  class="text-slate-600 text-[12px] md:text-[16px]"
+                >
+                  The consultations provided by Bareq Al Shati have made a huge
+                  difference in our workflow. They provided us with
+                  easy-to-implement strategies that increased profits have made
+                  a huge difference in our workflow.
+                </p>
+              </div>
+              <div
+                class="flex justify-between items-center bg-slate-50 px-5 md:px-10 py-3"
+              >
+                <div class="flex items-center gap-2">
+                  <div
+                    class="w-[35px] md:w-[50px] h-[35px] md:h-[50px] rounded-sm overflow-hidden"
+                  >
+                    <img
+                      src="images/businessman.png"
+                      alt="avatar"
+                      class="h-full w-full"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p
+                    lang="en"
+                    data-key="clientThreeName"
+                    class="font-semibold text-[10px] md:text-[16px]"
+                  >
+                    Murphy Dalton
+                  </p>
+                </div>
+                <h2 lang="en" data-key="clientThreeDesc">CTO</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-white shadow-lg p-5 md:p-10">
+                <p
+                  lang="en"
+                  data-key="clientFour"
+                  class="text-slate-600 text-[12px] md:text-[16px]"
+                >
+                  We are grateful to Bareq Alshati for its role in improving our
+                  marketing plan. Help us develop innovative marketing
+                  strategies that have contributed significantly to increasing
+                  our market share
+                </p>
+              </div>
+              <div
+                class="flex justify-between items-center bg-slate-50 px-5 md:px-10 py-3"
+              >
+                <div class="flex items-center gap-2">
+                  <div
+                    class="w-[35px] md:w-[50px] h-[35px] md:h-[50px] rounded-sm overflow-hidden"
+                  >
+                    <img
+                      src="images/businesswoman.png"
+                      alt="avatar"
+                      class="h-full w-full"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p
+                    lang="en"
+                    data-key="clientFourName"
+                    class="font-semibold text-[10px] md:text-[16px]"
+                  >
+                    Huda L.
+                  </p>
+                </div>
+                <h2 lang="en" data-key="clientFourDesc">CFO</h2>
+              </div>
+            </div>
           </div>
-          <div
-            class="card relative p-5 text-center border-b rtl:md:border-r ltr:md:border-r border-slate-200 duration-500 group hover:bg-emerald-400"
-          >
-            <i
-              class="fa-solid fa-user-tie fa-2x text-emerald-600 duration-500 group-hover:text-white"
-            ></i>
-            <h1
-              lang="en"
-              data-key="servicesTitleTwo"
-              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
-            >
-              Business Consulting
-            </h1>
-            <p
-              lang="en"
-              data-key="servicesDescTwo"
-              class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
-            >
-              Provide innovative solutions to meet the challenges that the
-              company may face
-            </p>
+          <div class="prevArrowBtn">
+            <i class="fa-solid fa-angle-left"></i>
           </div>
-          <div
-            class="card relative p-5 text-center duration-500 rtl:md:border-r border-b border-slate-200 group hover:bg-emerald-400"
-          >
-            <i
-              class="fa-solid fa-sack-dollar fa-2x text-emerald-600 duration-500 group-hover:text-white"
-            ></i>
-            <h1
-              lang="en"
-              data-key="servicesTitleThree"
-              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
-            >
-              Business Insurance
-            </h1>
-            <p
-              lang="en"
-              data-key="servicesDescThree"
-              class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
-            >
-              Protect companies from financial risks related to day-to-day
-              business activities
-            </p>
+          <div class="nextArrowBtn">
+            <i class="fa-solid fa-angle-right"></i>
           </div>
-          <div
-            class="card relative p-5 text-center duration-500 border-b md:border-b-0 ltr:md:border-r border-slate-200 group hover:bg-emerald-400"
-          >
-            <i
-              class="fa-solid fa-earth-asia fa-2x text-emerald-600 duration-500 group-hover:text-white"
-            ></i>
-            <h1
-              lang="en"
-              data-key="servicesTitleFour"
-              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
-            >
-              Global Investigation
-            </h1>
-            <p
-              lang="en"
-              data-key="servicesDescFour"
-              class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
-            >
-              Collaborate with government organizations, private companies, and
-              international lawyers to ensure compliance with local and
-              international laws
-            </p>
-          </div>
-          <div
-            class="card relative p-5 text-center duration-500 border-b md:border-b-0 md:border-r border-slate-200 group hover:bg-emerald-400"
-          >
-            <i
-              class="fa-solid fa-ranking-star fa-2x text-emerald-600 duration-500 group-hover:text-white"
-            ></i>
-            <h1
-              lang="en"
-              data-key="servicesTitleFive"
-              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
-            >
-              Audit & Evaluation
-            </h1>
-            <p
-              lang="en"
-              data-key="servicesDescFive"
-              class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
-            >
-              Review and analyze financial statements or operations within the
-              organization for accuracy
-            </p>
-          </div>
-          <div
-            class="card relative p-5 text-center rtl:md:border-r border-slate-200 duration-500 group hover:bg-emerald-400"
-          >
-            <i
-              class="fa-solid fa-money-bill-trend-up fa-2x text-emerald-600 duration-500 group-hover:text-white"
-            ></i>
-            <h1
-              lang="en"
-              data-key="servicesTitleSix"
-              class="text-slate-700 md:text-xl font-bold py-5 duration-500 group-hover:text-white"
-            >
-              Marketing Strategy
-            </h1>
-            <p
-              lang="en"
-              data-key="servicesDescSix"
-              class="text-slate-500 text-[12px] md:text-[16px] duration-500 group-hover:text-white"
-            >
-              How to attract customers, build brand, and achieve business goals
-            </p>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
-    <!-- End Services -->
+    <!-- End Testimonials -->
     <!-- Start Contact -->
     <section class="contact py-16 bg-slate-100">
       <div
         class="container px-5 md:px-0 mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-20"
       >
         <div class="flex-1">
-          <head class="pb-5">
+          <head>
             <h1
               lang="en"
               data-key="faqHead"
@@ -983,35 +1327,6 @@
             </div>
             <div class="flex-1">
               <label
-                for="subject"
-                lang="en"
-                data-key="servicesLink"
-                class="text-slate-700 font-semibold pb-2 block"
-              >
-                Services
-              </label>
-              <select
-                class="p-3 bg-slate-50 border border-emerald-200 bg-white text-[14px] text-slate-500 outline-none rounded-md w-full"
-              >
-                <option lang="en" data-key="optionTwo" value="">
-                  Registration Services
-                </option>
-                <option lang="en" data-key="optionThree" value="">
-                  Pre-Qualification Services
-                </option>
-                <option lang="en" data-key="optionFour" value="">
-                  Management Consultation
-                </option>
-                <option lang="en" data-key="optionFive" value="">
-                  Company Profile Design
-                </option>
-                <option lang="en" data-key="optionSix" value="">
-                  Web Design and Development
-                </option>
-              </select>
-            </div>
-            <div class="flex-1">
-              <label
                 for="message"
                 lang="en"
                 data-key="message"
@@ -1053,14 +1368,9 @@
             </li>
             <li class="flex items-center gap-2">
               <i class="fa-solid fa-phone text-xl"></i>
-              <div>
-                <a href="tel:+966500484444" target="_blank" class="block"
-                  >+966 50 048 4444</a
-                >
-                <a href="tel:+966555862222" target="_blank" class="block"
-                  >+966 55 586 2222</a
-                >
-              </div>
+              <a href="tel:+966500484444" target="_blank" class="block"
+                >+966 50 048 4444</a
+              >
             </li>
             <li class="flex items-center gap-2">
               <i class="fa-solid fa-location-pin text-xl"></i>
@@ -1072,7 +1382,7 @@
           <h2
             lang="en"
             data-key="footerFirst"
-            class="font-bold text-lg border-dashed border-b-2 text-slate-700 mb-5"
+            class="font-bold text-lg border-dashed w-fit border-b-2 text-slate-700 mb-5"
           >
             Quick links
           </h2>
@@ -1191,9 +1501,13 @@
     </section> -->
     <!-- End Video Modal -->
   </body>
-  <script src="js/main.js"></script>
+  <!-- Swiper js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/translation.js"></script>
+  <!-- إضافة JavaScript للمكتبة -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <!-- import video.js lib -->
   <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"></script>
+  <script src="js/main.js"></script>
 </html>

@@ -1,6 +1,11 @@
 const translations = {
   en: {
     about: "About Us",
+    services: "Our Services",
+    features: "Our Features",
+    contact: "Contact Us",
+    contactDesc:
+      "Our team is here to help you! If you have any questions or concerns about our services, or if you need technical support, please feel free to contact us. We appreciate every comment and are keen to provide you with the best service Fill out the form below and we will contact you as soon as possible",
     homeLink: "Home",
     aboutLink: "About",
     servicesLink: "Services",
@@ -9,31 +14,41 @@ const translations = {
     head: "Fastest Way to Achieve Success",
     description:
       "At Bareeq, we provide you with economic consultations that lead you towards success, with innovative plans and strategic visions that ensure you excel and grow in the business world",
+    headTwo: "We Help to Grow Your Business",
+    descriptionTwo:
+      "helping you grow your business. Whether you're a startup or an established company, we provide the expertise, strategies, and tools needed to elevate your brand, improve efficiency, and drive long-term success",
+    headThree: "We Are The Best Consulting Company",
+    descriptionThree:
+      "we pride ourselves on being the best consulting company. Our expertise, experience, and commitment to excellence allow us to provide tailored solutions that drive success for our clients.",
+    headFour: "Your Success Our Achievement",
+    descriptionFour:
+      "Every step we take with you is a step towards achieving your goals. We work hard to ensure you get the support and guidance you need to excel in your field.",
     watchBtn: "Watch video",
     boxOneTitle: "Qualified Team",
     boxTwoTitle: "Individual Approach",
     boxThreeTitle: "100% Success",
     boxFourTitle: "100% Satisfaction",
-    aboutHead:
-      "Bareq Al Shati established in 2003 We provide solutions grow business",
+    aboutHead: "Bareq Al Shati",
     aboutDescription:
-      "Bareq Al Shati is a full-fledged Business Consulting Company in Saudi Arabia, offering SAGIA Business Services, Registration Services, Pre-qualification Services, Management Consultation, Company Profile Design, Web Design. Offering a wide spectrum of comprehensive and value-adding Business Consulting services and solutions, Bareq Al Shati has carved a unique name for itself as one of the leading and most-trusted Business Consulting Company in Saudi Arabia. Our aim of providing professional services to small / meduim companies and assist them by providing management services including registration & pre-qualification services for their respective ares of expertise. We offer financial consultation and economic studies for companies, moreover design and create professional profiles and websites for companies.",
+      "It's a full-fledged Business Consulting Company in Saudi Arabia, offering SAGIA Business Services, Registration Services, Pre-qualification Services, Management Consultation, Company Profile Design, Web Design. Offering a wide spectrum of comprehensive and value-adding Business Consulting services and solutions, Bareq Al Shati has carved a unique name for itself as one of the leading and most-trusted Business Consulting Company in Saudi Arabia. Our aim of providing professional services to small / meduim companies and assist them by providing management services including registration & pre-qualification services for their respective ares of expertise. We offer financial consultation and economic studies for companies, moreover design and create professional profiles and websites for companies.",
+    aboutBareq:
+      "The company specializes in providing commercial and economic consulting since 2003. The company focuses on providing innovative solutions that meet the needs of its customers through thoughtful strategies based on accurate market and data analysis. The company provides consulting in several areas such as business development, project management, financial planning, and marketing strategies, which helps companies improve their performance and increase their growth. Bareq Alshati is committed to providing high-quality services that keep pace with the latest economic trends and help its customers make strategic decisions that support the achievement of their long-term goals",
     more: "Learn More",
     featureHead: "Our Main Features",
     featureDescription:
       "We understand that each work is unique. We therefore offer you customized consulting solutions based on a careful analysis of your needs and goals. From growth strategies to improving internal performance, we create plans that deliver tangible results for you.",
     featureOneHead: "Organization",
     featureOneDesc:
-      "Organization of the work of the organization includes arranging and distributing tasks and resources effectively to ensure the achievement of objectives",
-    featurTwoHead: "Marketing Strategy",
+      "Structuring activities, resources and people to achieve goals efficiently",
+    featureTwoHead: "Marketing Strategy",
     featureTwoDesc:
-      "A comprehensive plan aimed at identifying how to reach target customers and promote the brand to increase sales and achieve the organization's goals",
+      "Identify unique product values, and choose the right channels to reach the audience",
     featureThreeHead: "Risk Analysis",
     featureThreeDesc:
-      "Identify and assess potential risks that may affect the organization's or project's objectives, and then develop strategies to deal with them",
+      "Identify and assess potential risks that may affect the business",
     featureFourHead: "Capital Market",
     featureFourDesc:
-      "Providing financing to institutions and companies by allowing them to issue shares and bonds to raise the funds they need to implement their projects",
+      "Provide opportunities for investors to achieve returns on their investments",
     140: 140,
     1200: 1200,
     12: 12,
@@ -46,27 +61,19 @@ const translations = {
     chooseHead: "Why Choose Bareq",
     chooseDesc:
       "Bareq works to provide consulting based on a careful analysis of the internal and external environment of the client, which helps to provide long-term solutions that contribute to business growth and achieve sustainable success, the company provides integrated solutions that suit the challenges and requirements of each client individually, rather than providing general solutions that may not be effective in different environments.",
-    serviceHead: "Consulting Services",
+    serviceHead: "Our Best Services",
     serviceDesc:
       "We not only provide immediate solutions, but also provide long-term analytics and advice that help you prepare for the future of your business. We help you identify future opportunities and potential challenges, ensuring you a lasting competitive advantage.",
-    servicesTitleOne: "Business Analysis",
-    servicesDescOne:
-      "Study and analyze processes and systems in the organization with the aim of improving performance",
-    servicesTitleTwo: "Business Consulting",
-    servicesDescTwo:
-      "Provide innovative solutions to meet the challenges that the company may face",
-    servicesTitleThree: "Business Insurance",
-    servicesDescThree:
-      "Protect companies from financial risks related to day-to-day business activities",
-    servicesTitleFour: "Global Investigation",
-    servicesDescFour:
-      "Collaborate with government organizations, private companies, and international lawyers to ensure compliance with local and international laws",
-    servicesTitleFive: "Audit & Evaluation",
-    servicesDescFive:
-      "Review and analyze financial statements or operations within the organization for accuracy",
-    servicesTitleSix: "Marketing Strategy",
-    servicesDescSix:
-      "How to attract customers, build brand, and achieve business goals",
+    servicesTitleOne: "Registration with the Ministry of Investment",
+    servicesTitleTwo: "Business Services",
+    servicesTitleThree: "Management and technical consulting",
+    servicesTitleFour: "Coordination of international and local investments",
+    servicesTitleFive:
+      "Providing legal services to local and foreign companies",
+    servicesTitleSix: "Providing all commercial services",
+    testiHead: "Our Clients Says",
+    testiDesc:
+      "We believe that customer satisfaction is the foundation of our success. Therefore, we always strive to provide the best products and services that meet your expectations. Here are some of the opinions of our valued customers who have chosen and enjoyed our experience. We thank them for their trust, and we look forward to continuing to provide all that is new and valuable",
     faqHead: "Frequently Asked Questions",
     faqDesc:
       "Frequently asked questions about our integrated consulting services and customized business solutions that support your company's success and help you achieve your strategic goals efficiently and effectively in the long term.",
@@ -104,9 +111,30 @@ const translations = {
     send: "Send",
     copy: "Copyright © 2025 Bareq Al Shati. All rights reserved",
     value: "Our Value",
+    clientOne:
+      "We greatly appreciate to Bareq Alshati.Their advice was very valuable, as they provided us with a comprehensive plan that contributed to achieving our goals on time and within the specified budget.",
+    clientOneName: "Saoud Mahnna",
+    clientOneDesc: "CEO",
+    clientTwo:
+      "We have benefited greatly from the services of Bareq Al Shati in improving our business strategies. Financial consulting was accurate and effective, and helped us channel our resources perfectly to achieve our goals.",
+    clientTwoName: "Aziz Dosery",
+    clientTwoDesc: "PM",
+    clientThree:
+      "The consultations provided by Bareq Al Shati have made a huge difference in our workflow. They provided us with easy-to-implement strategies that increased profits have made a huge difference in our workflow.",
+    clientThreeName: "Murphy Dalton",
+    clientThreeDesc: "CTO",
+    clientFour:
+      "We are grateful to Bareq Alshati for its role in improving our marketing plan. Help us develop innovative marketing strategies that have contributed significantly to increasing our market share",
+    clientFourName: "Huda L.",
+    clientFourDesc: "CFO",
   },
   ar: {
     about: "من نحن",
+    services: "خدماتنا",
+    features: "مميزاتنا",
+    contact: "تواصل معنا",
+    contactDesc:
+      "فريقنا هنا لمساعدتك! إذا كان لديك أي أسئلة أو استفسارات حول خدماتنا، أو إذا كنت بحاجة إلى دعم فني، فلا تتردد في التواصل معنا. نحن نقدر كل تعليق ونحرص على تقديم أفضل خدمة لك املء النموذج أدناه وسنتواصل معك في أقرب وقت ممكن",
     homeLink: "الرئيسية",
     aboutLink: "من نحن",
     servicesLink: "الخدمات",
@@ -115,30 +143,38 @@ const translations = {
     head: "أسرع طريقة لتحقيق النجاح",
     description:
       " نقدم لك في بريق الاستشارات الاقتصادية التي تقودك نحو النجاح ، بخطط مبتكرة ورؤى استراتيجية تأكد من التفوق والنمو في عالم الأعمال",
+    headTwo: "نساعدك على تنمية أعمالك",
+    descriptionTwo:
+      "مساعدتك على تنمية عملك. سواء كنت شركة ناشئة أو شركة ذات خبرة ، فإننا نقدم الخبرة والاستراتيجيات والأدوات اللازمة لرفع علامتك التجارية وتحسين الكفاءة ودفع النجاح على المدى الطويل ",
+    headThree: "نحن أفضل شركة استشارية",
+    descriptionThree:
+      "نفخر بأنفسنا لكوننا أفضل شركة استشارية. تتيح لنا خبرتنا وتجربتنا والتزامنا بالتميز تقديم حلول مصممة خصيصا لعملائنا من شأنها أن تدفع النجاح لعملائنا",
+    headFour: "نجاحك إنجازنا",
+    descriptionFour:
+      "كل خطوة نتخذها معك هي خطوة نحو تحقيق أهدافك. نحن نعمل بجد لضمان حصولك على الدعم والتوجيه الذي تحتاجه للتميز في مجالك",
     watchBtn: "شاهد الفيديو",
     boxOneTitle: "فريق مؤهل",
     boxTwoTitle: "نهج فردي",
     boxThreeTitle: "١٠٠٪ نجاح",
     boxFourTitle: "١٠٠٪ رضا",
-    aboutHead: " بريق الشاطيء المنشاه في عام2003 نقدم حلولا لتنمية الأعمال",
+    aboutHead: "بريق الشاطيء",
     aboutDescription:
-      "بريق الشاطئ هي شركة استشارات أعمال متكاملة في المملكة العربية السعودية ، تقدم خدمات SAGIA للأعمال والتسجيل الخدمات ، خدمات التأهيل المسبق ، الاستشارات الإدارية ، تصميم ملف تعريف الشركة ، تصميم المواقع. تقدم مجموعة واسعة من خدمات استشارات الأعمال الشاملة وذات القيمة المضافة و الحلول ، نحتت بريق الشاطئ اسماً فريداً لنفسها كاسم واحد من شركة استشارات الأعمال الرائدة والأكثر ثقة في المملكة العربية السعودية العربيه. هدفنا من تقديم خدمات احترافية للصغار / المتوسطين الشركات ومساعدتها من خلال تقديم الخدمات الإدارية بما في ذلك خدمات التسجيل والتأهيل المسبق لكل منهما من الخبرة. نقدم الاستشارات المالية والدراسات الاقتصادية للشركات ، علاوة على ذلك ، تصميم وإنشاء ملفات تعريف احترافية و مواقع للشركات.",
+      "هي شركة استشارات أعمال متكاملة في المملكة العربية السعودية ، تقدم خدمات SAGIA للأعمال والتسجيل الخدمات ، خدمات التأهيل المسبق ، الاستشارات الإدارية ، تصميم ملف تعريف الشركة ، تصميم المواقع. تقدم مجموعة واسعة من خدمات استشارات الأعمال الشاملة وذات القيمة المضافة و الحلول ، نحتت بريق الشاطئ اسماً فريداً لنفسها كاسم واحد من شركة استشارات الأعمال الرائدة والأكثر ثقة في المملكة العربية السعودية العربيه. هدفنا من تقديم خدمات احترافية للصغار / المتوسطين الشركات ومساعدتها من خلال تقديم الخدمات الإدارية بما في ذلك خدمات التسجيل والتأهيل المسبق لكل منهما من الخبرة. نقدم الاستشارات المالية والدراسات الاقتصادية للشركات ، علاوة على ذلك ، تصميم وإنشاء ملفات تعريف احترافية و مواقع للشركات.",
+    aboutBareq:
+      "الشركة متخصصة في تقديم الاستشارات التجارية والاقتصادية منذ عام 2003. تركز الشركة على توفير حلول مبتكرة تلبي احتياجات عملائها من خلال استراتيجيات مدروسة قائمة على تحليل دقيق للسوق والبيانات. تقدم الشركة استشارات في مجالات عدة مثل تطوير الأعمال، إدارة المشاريع، التخطيط المالي، واستراتيجيات التسويق، مما يساعد الشركات على تحسين أدائها وزيادة نموها. بريق الشاطيء تلتزم بتقديم خدمات عالية الجودة تواكب أحدث التوجهات الاقتصادية وتساعد عملائها على اتخاذ قرارات استراتيجية تدعم تحقيق أهدافهم على المدى الطويل",
     more: "المزيد",
     featureHead: "ميزاتنا الاساسية",
     featureDescription:
       "نحن نفهم أن كل عمل فريد من نوعه. لذلك نقدم لك حلولاً استشارية مخصصة بناءً على تحليل دقيق لاحتياجاتك وأهدافك. من استراتيجيات النمو إلى تحسين الأداء الداخلي، نحن نضع خططاً تحقق لك نتائج  ملموسة.",
     featureOneHead: "المنظمة",
-    featureOneDesc:
-      "تنظيم أعمال المنظمة يشمل ترتيب وتوزيع المهام والموارد بفعالية لضمان تحقيق الأهداف",
-    featurTwoHead: "استراتيجية التسويق",
+    featureOneDesc: "هيكلة الأنشطة والموارد والأفراد لتحقيق الأهداف بكفاءة",
+    featureTwoHead: "استراتيجية التسويق",
     featureTwoDesc:
-      "خطة شاملة تهدف إلى تحديد كيفية الوصول إلى العملاء المستهدفين وتعزيز العلامة التجارية لزيادة المبيعات وتحقيق أهداف المنظمة",
+      "تحديد القيم الفريدة للمنتج، واختيار القنوات المناسبة للوصول إلى الجمهور",
     featureThreeHead: "تحليل المخاطر",
-    featureThreeDesc:
-      "تحديد وتقييم المخاطر المحتملة التي قد تؤثر على أهداف المنظمة أو المشروع، ومن ثم تطوير استراتيجيات للتعامل معها",
+    featureThreeDesc: "تحديد وتقييم المخاطر المحتملة التي قد تؤثر على الأعمال",
     featureFourHead: "سوق رأس المال",
-    featureFourDesc:
-      "توفير التمويل للمؤسسات والشركات من خلال السماح لها بإصدار أسهم وسندات لجمع الأموال التي تحتاجها لتنفيذ مشروعاتها",
+    featureFourDesc: "توفير فرص للمستثمرين لتحقيق عوائد على استثماراتهم",
     140: "١٤٠",
     1200: "١٢٠٠",
     12: "١٢",
@@ -148,30 +184,21 @@ const translations = {
     statsOne: "سنة من الخبرة",
     statsTwo: "عملاء راضون",
     statsThree: "مشاريع منجزة",
-    chooseHead: "لماذا يجب اختيار بارق ",
+    chooseHead: "لماذا يجب اختيار بريق ",
     chooseDesc:
       "بريق تعمل على تقديم استشارات تستند إلى تحليل دقيق للبيئة الداخلية والخارجية للعميل، مما يساعد على تقديم حلول طويلة الأمد تساهم في نمو الأعمال وتحقيق النجاح المستدام , الشركة تقدم حلولًا متكاملة تتناسب مع تحديات ومتطلبات كل عميل على حدة، بدلاً من تقديم حلول عامة قد لا تكون فعّالة في بيئات مختلفة",
-    serviceHead: "خدمات استشارية",
+    serviceHead: "افضل خدماتنا",
     serviceDesc:
       "نحن لا نقتصر على تقديم حلول فورية فحسب، بل نقدم أيضاً تحليلات واستشارات طويلة الأمد تساعدك في الاستعداد لمستقبل أعمالك. نحن نساعدك في تحديد الفرص المستقبلية والتحديات المحتملة، مما يضمن لك ميزة تنافسية دائمة.",
-    servicesTitleOne: "تحليل الاعمال",
-    servicesDescOne:
-      "دراسة وتحليل العمليات والأنظمة في المنظمة بهدف تحسين الأداء",
-    servicesTitleTwo: "استشارات الاعمال",
-    servicesDescTwo:
-      "تقديم حلول مبتكرة لمواجهة التحديات التي قد تواجهها الشركة",
-    servicesTitleThree: "تأمين الاعمال",
-    servicesDescThree:
-      "حماية الشركات من المخاطر المالية المتعلقة بالأنشطة التجارية اليومية",
-    servicesTitleFour: "التحقيق العالمي",
-    servicesDescFour:
-      "التعاون مع المنظمات الحكومية والشركات الخاصة والمحامين الدوليين لضمان الامتثال للقوانين المحلية والدولية",
-    servicesTitleFive: "التدقيق والتقييم",
-    servicesDescFive:
-      "مراجعة وتحليل البيانات المالية أو العمليات داخل المؤسسة للتأكد من دقتها",
-    servicesTitleSix: "استراتيجية التسويق",
-    servicesDescSix:
-      "كيفية جذب العملاء وبناء العلامة التجارية وتحقيق أهداف العمل",
+    servicesTitleOne: "التسجيل لدى وزارة الاستثمار",
+    servicesTitleTwo: "خدمات الأعمال",
+    servicesTitleThree: "الاستشارات الإدارية والفنية",
+    servicesTitleFour: "تنسيق الاستثمارات الدولية والمحلية",
+    servicesTitleFive: "تقديم الخدمات القانونية للشركات المحلية والأجنبية",
+    servicesTitleSix: "تقديم جميع الخدمات التجارية",
+    testiHead: "يقول عملاؤنا",
+    testiDesc:
+      "نؤمن بأن رضا عملائنا هو أساس نجاحنا. لذلك، نسعى دائمًا لتقديم أفضل المنتجات والخدمات التي تلبي توقعاتكم. فيما يلي بعض من آراء عملائنا الكرام الذين اختاروا تجربتنا واستمتعوا بها. نُشكرهم على ثقتهم، ونتطلع للاستمرار في تقديم كل ما هو جديد وقيّم",
     faqHead: "الأسئلة الشائعة",
     faqDesc:
       "الأسئلة الشائعة حول خدماتنا الاستشارية المتكاملة وحلول الأعمال المخصصة التي تدعم نجاح شركتك وتساعدك في تحقيق أهدافك الاستراتيجية بكفاءة وفعالية على المدى الطويل",
@@ -206,10 +233,26 @@ const translations = {
     send: "ارسال",
     copy: "حقوق الطبع والنشر © ٢٠٢٥ بريق الشاطيء كل الحقوق محفوظة.",
     value: "قيمتنا",
+    clientOne:
+      "نحن ممتنون جدا لبريق الشاطي ، وكانت نصيحتهم قيمة للغاية ، حيث قدموا لنا خطة شاملة ساهمت في تحقيق أهدافنا في الوقت المحدد وضمن الميزانية المحددة.",
+    clientOneName: "سعود المهنا",
+    clientOneDesc: "رئيس تنفيذي",
+    clientTwo:
+      "لقد استفدنا بشكل كبير من خدمات بريق الشاطئ في تحسين استراتيجيات أعمالنا. كانت الاستشارات المالية دقيقة وفعالة ، وساعدتنا في توجيه مواردنا بشكل مثالي لتحقيق أهدافنا.",
+    clientTwoName: "عزيز الدوسري",
+    clientTwoDesc: "مدير مشاريع",
+    clientThree:
+      "لقد أحدثت الاستشارات التي قدمها بريق الشاطئ فرقا كبيرا في سير عملنا. لقد زودونا باستراتيجيات سهلة التنفيذ أحدثت زيادة الأرباح فرقا كبيرا في سير عملنا.",
+    clientThreeName: "مورفي دالتون",
+    clientThreeDesc: "رئيس التكنولوجيا",
+    clientFour:
+      "نحن ممتنون لبريق الشاطي لدوره في تحسين خطتنا التسويقية. ساعدنا في تطوير استراتيجيات تسويقية مبتكرة ساهمت بشكل كبير في زيادة حصتنا في السوق",
+    clientFourName: "هدى ل.",
+    clientFourDesc: "مدير مالي",
   },
 };
 
-let isLanguageChanged = false; 
+let isLanguageChanged = false;
 // وظيفة لتغيير اللغة
 function changeLanguage(language) {
   let currentLanguage = document.documentElement.getAttribute("lang");
@@ -242,10 +285,7 @@ function changeLanguage(language) {
     document.documentElement.setAttribute("dir", "ltr");
     languageButton.src = "images/ar.png"; // تغيير الصورة إلى الإنجليزية
   }
-
-
 }
-
 
 const savedLanguage = localStorage.getItem("language");
 if (

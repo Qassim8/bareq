@@ -36,6 +36,102 @@ html[dir="ltr"] {
   display: block;
 }
 
+div.swiper-button-next,
+div.swiper-button-prev {
+  top: 50%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(1, 103, 5, 0.5); /* خلفية داكنة */
+  color: white !important; /* نص أبيض */
+  border-radius: 50%; /* شكل دائري */
+  width: 50px !important; /* عرض الزر */
+  height: 50px !important; /* ارتفاع الزر */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px; /* حجم الخط */
+}
+
+/* عند التمرير على الزر */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* تغيير الخلفية عند التمرير */
+}
+
+/* تغيير شكل الأسهم */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 15px !important; /* تعديل حجم السهم */
+  font-weight: bold; /* جعل السهم ثقيل */
+}
+
+.testiSwiper .swiper-slide{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border-radius: 20px !important;
+}
+
+.prevArrowBtn,
+.nextArrowBtn {
+  margin-inline: 20px !important;
+  transform: translateY(-50%) !important;
+  top: 40% !important;
+  position: absolute !important;
+  z-index: 1000 !important;
+  color: #fff !important;
+  background-color: #02a43bb8 !important;
+  font-size: 0.8rem !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  display: block !important;
+  width: 2.75rem !important;
+  height: 2.75rem !important;
+  line-height: 2.625rem !important;
+  border-radius: 100% !important;
+  transition: all 0.5s !important;
+}
+@media(max-width: 767px){
+  .prevArrowBtn,
+.nextArrowBtn{
+  width: 2rem !important;
+  height: 2rem !important;
+  line-height: 2rem !important;
+}
+}
+
+.prevArrowBtn:hover,
+.nextArrowBtn:hover {
+  background-color: #125a2b !important;
+}
+
+.prevArrowBtn {
+  left: -18px !important;
+}
+
+.nextArrowBtn {
+  right: -18px !important;
+}
+
+.swiper-pagination {
+  position: static !important;
+  padding-top: 20px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 100%;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+.swiper-pagination-bullet-active {
+  width: 22px !important;
+  border-radius: 7px !important;
+  background-color: #02a43bb8 !important;
+}
 /* تغيير حجم زر التشغيل */
 .vjs-theme-fantasy .vjs-big-play-button {
   font-size: 50px !important;
