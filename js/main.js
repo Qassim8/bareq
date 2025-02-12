@@ -5,15 +5,6 @@ const showNavbar = () => {
 const hideNavbar = () => {
   nav.style.cssText = "left: -100%";
 };
-const video = document.querySelector(".video-modal");
-
-const videoShow = () => {
-  video.style.cssText = "top: 0 !important";
-};
-
-const videoHide = () => {
-  video.style.cssText = "top: -100% !important";
-};
 
 const faqShow = (e) => {
   console.log(event.target);
@@ -101,7 +92,7 @@ let vendorsSwiper = new Swiper(".vendorsSwiper", {
   // Optional parameters
   autoplay: true,
   loop: true,
-  spaceBetween: 30,
+  spaceBetween: 15,
   speed: 500,
   delay: 2000,
   breakpoints: {

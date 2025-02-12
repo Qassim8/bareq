@@ -420,7 +420,7 @@
       <div
         class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-10"
       >
-        <div class="flex-1 relative" data-aos="fade-right">
+        <div class="flex-1 relative" data-aos="zoom-in">
           <div
             class="h-full mt-0 md:mr-[150px] md:mb-[150px] ml-0 border-[10px] border-slate-100"
           >
@@ -442,7 +442,7 @@
             />
           </div>
         </div>
-        <div class="flex-1" data-aos="fade-left">
+        <div class="flex-1" data-aos="flip-left">
           <head>
             <h1
               lang="en"
@@ -485,48 +485,48 @@
     <!-- Start Vendors -->
     <section>
       <div class="container mx-auto py-10">
-        <div class="swiper vendorsSwiper" >
+        <div class="swiper vendorsSwiper" dir="rtl" >
         <div class="swiper-wrapper">
           <div class="swiper-slide slide_1 !h-[80px]">
             <img
               src="images/vendor-1.jpg"
               alt="vendor"
-              class="max-w-full max-h-full"
+              class="w-full max-h-full"
             />
           </div>
           <div class="swiper-slide slide_2 !h-[80px]">
             <img
               src="images/vendor-2.png"
               alt="vendor"
-              class="max-w-full max-h-full"
+              class="w-full max-h-full"
             />
           </div>
           <div class="swiper-slide slide_3 !h-[80px]">
             <img
               src="images/vendor-3.jpg"
               alt="vendor"
-              class="max-w-full max-h-full"
+              class="w-full max-h-full"
             />
           </div>
           <div class="swiper-slide slide_4 !h-[80px]">
             <img
               src="images/vendor-4.jpg"
               alt="vendor"
-              class="max-w-full max-h-full"
+              class="w-full max-h-full"
             />
           </div>
           <div class="swiper-slide slide_5 !h-[80px]">
             <img
               src="images/vendor-5.jpg"
               alt="vendor"
-              class="max-w-full max-h-full"
+              class="w-full max-h-full"
             />
           </div>
           <div class="swiper-slide slide_6 !h-[80px]">
             <img
               src="images/vendor-6.png"
               alt="vendor"
-              class="max-w-full max-h-full"
+              class="w-full max-h-full"
             />
           </div>
         </div>
@@ -726,7 +726,7 @@
       <div
         class="container mx-auto flex flex-col md:flex-row items-center gap-10"
       >
-        <section class="flex-1" data-aos="fade-rightt">
+        <section class="flex-1" data-aos="fade-bottom">
           <head class="pb-5">
             <h1
               lang="en"
@@ -835,7 +835,7 @@
         </section>
         <section
           class="flex-1 p-5 border-5 border-emerald-500/20 rounded-md duration-500 hover:bg-emerald-200"
-          data-aos="fade-left"
+          data-aos="fade-top"
         >
           <picture class="w-full rounded-md overflow-hidden">
             <img src="images/feature.jpeg" alt="featuer" class="max-w-full" />
@@ -878,7 +878,7 @@
       >
         <div class="flex-1 h-full shadow-2xl" data-aos="fade-up">
           <video
-            class="video-js vjs-theme-fantasy min-w-full min-h-full"
+            class="video-js vjs-theme-fantasy min-w-full max-w-full min-h-full"
             controls
             data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube",
                  "src": "https://youtu.be/8-Ro8iW28Ck"}]}'
@@ -1493,27 +1493,6 @@
       </p>
     </footer>
     <!-- End Footer -->
-    <!-- Start Video Modal -->
-    <!-- <section
-      class="video-modal fixed right-0 w-full h-screen z-[100] duration-300 before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-slate-800/80 before:-z-[30]"
-    >
-      <div class="container mx-auto h-1/2 md:h-[70%] w-[70%] mt-32">
-        <div class="top-0 p-5 h-full bg-white rounded-md flex flex-col gap-5">
-          <i
-            class="fa-solid fa-x text-right cursor-pointer"
-            onclick="videoHide()"
-          ></i>
-          <video
-            class="video-js"
-            controls
-            style="width: 100%; height: 100%"
-            data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube",
-                 "src": "https://youtu.be/8-Ro8iW28Ck"}]}'
-          ></video>
-        </div>
-      </div>
-    </section> -->
-    <!-- End Video Modal -->
   </body>
   <!-- Swiper js -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
