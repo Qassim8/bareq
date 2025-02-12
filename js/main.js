@@ -97,6 +97,31 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
+let vendorsSwiper = new Swiper(".vendorsSwiper", {
+  // Optional parameters
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  speed: 500,
+  delay: 2000,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  },
+});
+
 let swiper2 = new Swiper(".testiSwiper", {
   // Optional parameters
   autoplay: true,
