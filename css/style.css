@@ -15,6 +15,9 @@ html[dir="ltr"] {
   font-family: "Poppins", sans-serif;
   text-align: left;
 }
+.dir-ltr{
+  direction: ltr !important;
+}
 
 @media (min-width: 768px) {
   nav ul li {
